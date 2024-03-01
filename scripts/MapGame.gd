@@ -123,16 +123,28 @@ func _input(event):
 				else: #second click, finish line
 					var second_clicked_term = clicked_term
 					if second_clicked_term != first_clicked_term:
-						line_in_progress.set_point_position(1, second_clicked_term.global_position - first_clicked_term.get_global_position())
-						line_in_progress.setup_connector(first_clicked_term.term_index, second_clicked_term.term_index)
-						#update global connections
-						term_connections[first_clicked_term.term_index]["start_lines"].append(line_in_progress)
-						term_connections[second_clicked_term.term_index]["end_lines"].append(line_in_progress)
-						# set up signaling for dragging around
-						# set up updating dictionary / list of connections
-						#reset for next connection
-						first_clicked_term = null
-						line_in_progress = null
+						#check if a connection already exists between the two terms
+						var connection_exists = false
+						for line in term_connections[first_clicked_term.term_index]["start_lines"]:
+							if line.end_term_index == second_clicked_term.term_index:
+								connection_exists = true
+								# cancel the line, putting the user back to first click
+								first_clicked_term.remove_child(line_in_progress)
+								line_in_progress.queue_free()
+								line_in_progress = null
+								first_clicked_term = null
+								break
+						if not connection_exists:
+							line_in_progress.set_point_position(1, second_clicked_term.global_position - first_clicked_term.get_global_position())
+							line_in_progress.setup_connector(first_clicked_term.term_index, second_clicked_term.term_index)
+							#update global connections
+							term_connections[first_clicked_term.term_index]["start_lines"].append(line_in_progress)
+							term_connections[second_clicked_term.term_index]["end_lines"].append(line_in_progress)
+							# set up signaling for dragging around
+							# set up updating dictionary / list of connections
+							#reset for next connection
+							first_clicked_term = null
+							line_in_progress = null
 			elif first_clicked_term and line_in_progress:
 				# we didn't click a term
 				first_clicked_term.remove_child(line_in_progress)
