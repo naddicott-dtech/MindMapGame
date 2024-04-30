@@ -143,6 +143,7 @@ func _input(event):
 							#update global connections
 							term_connections[first_clicked_term.term_index]["start_lines"].append(line_in_progress)
 							term_connections[second_clicked_term.term_index]["end_lines"].append(line_in_progress)
+							update_line_positions(line_in_progress, first_clicked_term, second_clicked_term)
 							# set up signaling for dragging around
 							# set up updating dictionary / list of connections
 							#reset for next connection
@@ -171,23 +172,17 @@ func update_lines_for_term(changed_term):
 	# move start and end points of lines where this term is the start
 	for line in term_connections[changed_term.term_index]["start_lines"]:
 		# Calculate the previous global position of the line's start point
-		var line_parent = line.get_parent()
-		var end_point_global = line.get_global_position() + line.get_point_position(1)
-		# Calculate the new global position for the start point
-		var new_start_point_global = changed_term.get_global_position()
-		# Calculate the delta
-		var delta = changed_term.get_global_position() - changed_term.old_global_position
-		# Apply the delta to the line's start point
-		var new_start_local = line.to_local(new_start_point_global)
-		line.set_point_position(0, new_start_local)
-		# Apply the delta to the line's end point (if the term is the start term)
-		var new_end_local = line.to_local(end_point_global - delta)
-		line.set_point_position(1, new_end_local)
-		line.z_index = 0
+		# Get the end term node using the term index stored in the line
+		var end_term = get_term_instance_by_index(line.get_connected_term_index())
+		if end_term:
+			update_line_positions(line, changed_term, end_term)
+			line.z_index = 0
 	# move end points of lines wher ethis term is the end
 	for line in term_connections[changed_term.term_index]["end_lines"]:
-		line.set_point_position(1, changed_term.get_global_position() - line.get_parent().get_global_position())
-		line.z_index = 0
+		var start_term = get_term_instance_by_index(line.origin_term_index)
+		if start_term:
+			update_line_positions(line, start_term, changed_term)
+			line.z_index = 0
 		
 func calculate_score():
 	var base_score = 10
@@ -311,8 +306,8 @@ func get_clicked_term(click_position) -> Node2D:
 
 func _on_calculate_score_button_pressed():
 	var score = calculate_score()
-	$UI/ScoreBox.text = "Score: " + str(score)
-	$UI/ScoreBox.visible = true
+	$UI/Score/ScoreBox.text = "Score: " + str(score)
+	$UI/Score/ScoreBox.visible = true
 
 
 func _on_disconnect_pressed():
@@ -363,3 +358,46 @@ func disconnect_term(term: Node2D):
 	for line in to_free:
 		if is_instance_valid(line):
 			line.queue_free()
+
+#function to calculate hot points for a given term node
+func get_hot_points(node):
+	var rect_size = node.get_node("ColorRect").size
+	var points = []
+	# print(node.position)
+	#centers
+	points.append(node.position + Vector2(rect_size.x / 2, 0)) # top center
+	points.append(node.position + Vector2(rect_size.x / 2, rect_size.y)) #bottom center
+	points.append(node.position + Vector2(0, rect_size.y / 2))  # Left center
+	points.append(node.position + Vector2(rect_size.x, rect_size.y / 2))  # Right center
+	#corners
+	points.append(node.position)  # Top left
+	points.append(node.position + Vector2(rect_size.x, 0))  # Top right
+	points.append(node.position + Vector2(0, rect_size.y))  # Bottom left
+	points.append(node.position + Vector2(rect_size.x, rect_size.y))  # Bottom right
+	# print(points)
+	return points
+
+func update_line_positions(line, start_node, end_node):
+	var start_points = get_hot_points(start_node)
+	var end_points = get_hot_points(end_node)
+	var min_distance = 2000.0 #start with a large number
+	var best_start_point = start_points[0]
+	var best_end_point = end_points[0]
+	
+	for point1 in start_points:
+		for point2 in end_points:
+			var distance = point1.distance_to(point2)
+			# print("Checking distance: ", distance)  # Debugging output
+			if distance < min_distance:
+				min_distance = distance
+				best_start_point = point1
+				best_end_point = point2
+				# print("New min distance: ", min_distance, " between ", best_start_point, " and ", best_end_point)  # Debugging output
+
+	if line.get_parent():
+		best_start_point = line.get_parent().to_local(best_start_point)
+		best_end_point = line.get_parent().to_local(best_end_point)
+		
+	# Set the line's points
+	line.points[0] = best_start_point
+	line.points[1] = best_end_point
