@@ -1,0 +1,495 @@
+{
+    "just_items": [
+        "DNA",
+        "Genetic Engineering",
+        "CRISPR",
+        "PCR",
+        "Recombinant DNA",
+        "Gel Electrophoresis",
+        "Restriction Enzymes",
+        "Gene Editing",
+        "Biotechnology",
+        "Insulin Production",
+        "Nucleotide",
+        "Transformation",
+        "DNA Sequencing",
+        "Genomic DNA",
+        "Gene Therapy",
+        "Synthetic Biology"
+    ],
+    "categories": [
+        "Gene Manipulation Techniques",
+        "Biotechnological Applications",
+        "DNA Technologies",
+        "Molecular Components",
+        "Advanced Genetic Technologies"
+    ],
+    "item_data": [
+        {
+            "name": "DNA",
+            "level": 1,
+            "categories": {
+                "Gene Manipulation Techniques": 0.9,
+                "Biotechnological Applications": 0.8,
+                "DNA Technologies": 1.0,
+                "Molecular Components": 0.95,
+                "Advanced Genetic Technologies": 0.85
+            },
+            "relatedness": {
+                "DNA": 1.0,
+                "Genetic Engineering": 1.0,
+                "CRISPR": 0.55,
+                "PCR": 0.42,
+                "Recombinant DNA": 0.36,
+                "Gel Electrophoresis": 0.33,
+                "Restriction Enzymes": 0.46,
+                "Gene Editing": 0.94,
+                "Biotechnology": 0.22,
+                "Insulin Production": 0.24,
+                "Nucleotide": 0.3,
+                "Transformation": 0.66,
+                "DNA Sequencing": 0.66,
+                "Genomic DNA": 0.57,
+                "Gene Therapy": 0.65,
+                "Synthetic Biology": 1.0
+            }
+        },
+		{
+			"name": "Genetic Engineering",
+			"level": 1,
+			"categories": {
+				"Gene Manipulation Techniques": 1.0,
+				"Biotechnological Applications": 0.8,
+				"DNA Technologies": 0.54,
+				"Molecular Components": 0.25,
+				"Advanced Genetic Technologies": 0.94
+			},
+			"relatedness": {
+				"DNA": 0.42,
+				"Genetic Engineering": 1.0,
+				"CRISPR": 0.32,
+				"PCR": 0.25,
+				"Recombinant DNA": 0.78,
+				"Gel Electrophoresis": 0.38,
+				"Restriction Enzymes": 0.63,
+				"Gene Editing": 0.24,
+				"Biotechnology": 0.61,
+				"Insulin Production": 0.96,
+				"Nucleotide": 0.52,
+				"Transformation": 0.5,
+				"DNA Sequencing": 0.22,
+				"Genomic DNA": 0.93,
+				"Gene Therapy": 0.74,
+				"Synthetic Biology": 0.89
+			}
+		},
+		{
+			"name": "CRISPR",
+			"level": 2,
+			"categories": {
+				"Gene Manipulation Techniques": 1.0,
+				"Biotechnological Applications": 0.89,
+				"DNA Technologies": 0.66,
+				"Molecular Components": 0.3,
+				"Advanced Genetic Technologies": 0.97
+			},
+			"relatedness": {
+				"DNA": 0.81,
+				"Genetic Engineering": 0.32,
+				"CRISPR": 1.0,
+				"PCR": 0.9,
+				"Recombinant DNA": 0.55,
+				"Gel Electrophoresis": 0.18,
+				"Restriction Enzymes": 0.54,
+				"Gene Editing": 0.85,
+				"Biotechnology": 0.71,
+				"Insulin Production": 0.26,
+				"Nucleotide": 0.31,
+				"Transformation": 0.3,
+				"DNA Sequencing": 0.83,
+				"Genomic DNA": 0.64,
+				"Gene Therapy": 0.57,
+				"Synthetic Biology": 0.8
+			}
+		},
+		{
+			"name": "PCR",
+			"level": 2,
+			"categories": {
+				"Gene Manipulation Techniques": 0.99,
+				"Biotechnological Applications": 0.83,
+				"DNA Technologies": 0.52,
+				"Molecular Components": 0.14,
+				"Advanced Genetic Technologies": 0.93
+			},
+			"relatedness": {
+				"DNA": 0.75,
+				"Genetic Engineering": 0.12,
+				"CRISPR": 0.47,
+				"PCR": 1.0,
+				"Recombinant DNA": 0.25,
+				"Gel Electrophoresis": 0.97,
+				"Restriction Enzymes": 0.45,
+				"Gene Editing": 0.41,
+				"Biotechnology": 0.97,
+				"Insulin Production": 0.14,
+				"Nucleotide": 0.39,
+				"Transformation": 0.62,
+				"DNA Sequencing": 0.85,
+				"Genomic DNA": 0.88,
+				"Gene Therapy": 0.19,
+				"Synthetic Biology": 0.16
+			}
+		},
+		{
+			"name": "Recombinant DNA",
+			"level": 2,
+			"categories": {
+				"Gene Manipulation Techniques": 0.86,
+				"Biotechnological Applications": 0.63,
+				"DNA Technologies": 0.66,
+				"Molecular Components": 0.38,
+				"Advanced Genetic Technologies": 0.87
+			},
+			"relatedness": {
+				"DNA": 0.27,
+				"Genetic Engineering": 0.92,
+				"CRISPR": 0.46,
+				"PCR": 0.19,
+				"Recombinant DNA": 1.0,
+				"Gel Electrophoresis": 0.1,
+				"Restriction Enzymes": 0.75,
+				"Gene Editing": 0.31,
+				"Biotechnology": 0.6,
+				"Insulin Production": 0.82,
+				"Nucleotide": 0.32,
+				"Transformation": 0.37,
+				"DNA Sequencing": 0.11,
+				"Genomic DNA": 0.46,
+				"Gene Therapy": 0.87,
+				"Synthetic Biology": 0.91
+			}
+		},
+		{
+			"name": "Gel Electrophoresis",
+			"level": 3,
+			"categories": {
+				"Gene Manipulation Techniques": 0.95,
+				"Biotechnological Applications": 0.67,
+				"DNA Technologies": 0.69,
+				"Molecular Components": 0.27,
+				"Advanced Genetic Technologies": 0.92
+			},
+			"relatedness": {
+				"DNA": 0.5,
+				"Genetic Engineering": 0.81,
+				"CRISPR": 0.66,
+				"PCR": 0.25,
+				"Recombinant DNA": 0.87,
+				"Gel Electrophoresis": 1.0,
+				"Restriction Enzymes": 0.97,
+				"Gene Editing": 0.4,
+				"Biotechnology": 0.34,
+				"Insulin Production": 0.17,
+				"Nucleotide": 0.77,
+				"Transformation": 0.83,
+				"DNA Sequencing": 0.75,
+				"Genomic DNA": 0.31,
+				"Gene Therapy": 0.45,
+				"Synthetic Biology": 0.69
+			}
+		},
+		{
+			"name": "Restriction Enzymes",
+			"level": 3,
+			"categories": {
+				"Gene Manipulation Techniques": 0.92,
+				"Biotechnological Applications": 0.59,
+				"DNA Technologies": 0.69,
+				"Molecular Components": 0.34,
+				"Advanced Genetic Technologies": 0.89
+			},
+			"relatedness": {
+				"DNA": 0.73,
+				"Genetic Engineering": 0.72,
+				"CRISPR": 0.59,
+				"PCR": 0.36,
+				"Recombinant DNA": 0.79,
+				"Gel Electrophoresis": 0.85,
+				"Restriction Enzymes": 1.0,
+				"Gene Editing": 0.74,
+				"Biotechnology": 0.76,
+				"Insulin Production": 0.8,
+				"Nucleotide": 0.37,
+				"Transformation": 0.41,
+				"DNA Sequencing": 0.91,
+				"Genomic DNA": 0.68,
+				"Gene Therapy": 0.2,
+				"Synthetic Biology": 0.13
+			}
+		},
+		{
+			"name": "Gene Editing",
+			"level": 2,
+			"categories": {
+				"Gene Manipulation Techniques": 0.99,
+				"Biotechnological Applications": 0.94,
+				"DNA Technologies": 0.57,
+				"Molecular Components": 0.15,
+				"Advanced Genetic Technologies": 0.94
+			},
+			"relatedness": {
+				"DNA": 0.47,
+				"Genetic Engineering": 0.58,
+				"CRISPR": 0.85,
+				"PCR": 0.21,
+				"Recombinant DNA": 0.46,
+				"Gel Electrophoresis": 0.2,
+				"Restriction Enzymes": 0.2,
+				"Gene Editing": 1.0,
+				"Biotechnology": 0.57,
+				"Insulin Production": 0.19,
+				"Nucleotide": 0.53,
+				"Transformation": 0.38,
+				"DNA Sequencing": 0.73,
+				"Genomic DNA": 0.94,
+				"Gene Therapy": 0.15,
+				"Synthetic Biology": 0.86
+			}
+		},
+		{
+			"name": "Biotechnology",
+			"level": 3,
+			"categories": {
+				"Gene Manipulation Techniques": 0.83,
+				"Biotechnological Applications": 0.86,
+				"DNA Technologies": 0.51,
+				"Molecular Components": 0.3,
+				"Advanced Genetic Technologies": 0.9
+			},
+			"relatedness": {
+				"DNA": 0.59,
+				"Genetic Engineering": 0.29,
+				"CRISPR": 0.48,
+				"PCR": 0.23,
+				"Recombinant DNA": 0.77,
+				"Gel Electrophoresis": 0.13,
+				"Restriction Enzymes": 0.44,
+				"Gene Editing": 0.96,
+				"Biotechnology": 1.0,
+				"Insulin Production": 0.75,
+				"Nucleotide": 0.49,
+				"Transformation": 0.14,
+				"DNA Sequencing": 1.0,
+				"Genomic DNA": 0.7,
+				"Gene Therapy": 0.19,
+				"Synthetic Biology": 0.3
+			}
+		},
+		{
+			"name": "Insulin Production",
+			"level": 3,
+			"categories": {
+				"Gene Manipulation Techniques": 0.99,
+				"Biotechnological Applications": 0.91,
+				"DNA Technologies": 0.58,
+				"Molecular Components": 0.23,
+				"Advanced Genetic Technologies": 0.92
+			},
+			"relatedness": {
+				"DNA": 0.54,
+				"Genetic Engineering": 0.71,
+				"CRISPR": 0.38,
+				"PCR": 0.76,
+				"Recombinant DNA": 0.85,
+				"Gel Electrophoresis": 0.93,
+				"Restriction Enzymes": 0.58,
+				"Gene Editing": 0.25,
+				"Biotechnology": 0.75,
+				"Insulin Production": 1.0,
+				"Nucleotide": 0.89,
+				"Transformation": 0.69,
+				"DNA Sequencing": 0.77,
+				"Genomic DNA": 0.53,
+				"Gene Therapy": 0.55,
+				"Synthetic Biology": 0.22
+			}
+		},
+		{
+			"name": "Nucleotide",
+			"level": 3,
+			"categories": {
+				"Gene Manipulation Techniques": 0.27,
+				"Biotechnological Applications": 0.15,
+				"DNA Technologies": 0.9,
+				"Molecular Components": 0.75,
+				"Advanced Genetic Technologies": 0.69
+			},
+			"relatedness": {
+				"DNA": 0.62,
+				"Genetic Engineering": 0.29,
+				"CRISPR": 0.1,
+				"PCR": 0.67,
+				"Recombinant DNA": 0.29,
+				"Gel Electrophoresis": 0.35,
+				"Restriction Enzymes": 0.39,
+				"Gene Editing": 0.68,
+				"Biotechnology": 0.97,
+				"Insulin Production": 0.1,
+				"Nucleotide": 1.0,
+				"Transformation": 0.3,
+				"DNA Sequencing": 0.86,
+				"Genomic DNA": 0.25,
+				"Gene Therapy": 0.76,
+				"Synthetic Biology": 0.78
+			}
+		},
+		{
+			"name": "Transformation",
+			"level": 2,
+			"categories": {
+				"Gene Manipulation Techniques": 0.18,
+				"Biotechnological Applications": 0.21,
+				"DNA Technologies": 0.45,
+				"Molecular Components": 0.14,
+				"Advanced Genetic Technologies": 0.52
+			},
+			"relatedness": {
+				"DNA": 0.45,
+				"Genetic Engineering": 0.18,
+				"CRISPR": 0.53,
+				"PCR": 0.67,
+				"Recombinant DNA": 0.14,
+				"Gel Electrophoresis": 0.13,
+				"Restriction Enzymes": 0.77,
+				"Gene Editing": 0.66,
+				"Biotechnology": 0.11,
+				"Insulin Production": 0.87,
+				"Nucleotide": 0.8,
+				"Transformation": 1.0,
+				"DNA Sequencing": 0.61,
+				"Genomic DNA": 0.13,
+				"Gene Therapy": 0.47,
+				"Synthetic Biology": 0.75
+			}
+		},
+		{
+			"name": "DNA Sequencing",
+			"level": 2,
+			"categories": {
+				"Gene Manipulation Techniques": 0.25,
+				"Biotechnological Applications": 0.26,
+				"DNA Technologies": 0.92,
+				"Molecular Components": 0.22,
+				"Advanced Genetic Technologies": 0.69
+			},
+			"relatedness": {
+				"DNA": 0.34,
+				"Genetic Engineering": 0.28,
+				"CRISPR": 0.54,
+				"PCR": 0.85,
+				"Recombinant DNA": 0.67,
+				"Gel Electrophoresis": 0.75,
+				"Restriction Enzymes": 0.58,
+				"Gene Editing": 0.38,
+				"Biotechnology": 0.12,
+				"Insulin Production": 0.6,
+				"Nucleotide": 0.84,
+				"Transformation": 0.76,
+				"DNA Sequencing": 1.0,
+				"Genomic DNA": 0.82,
+				"Gene Therapy": 0.53,
+				"Synthetic Biology": 0.32
+			}
+		},
+		{
+			"name": "Genomic DNA",
+			"level": 2,
+			"categories": {
+				"Gene Manipulation Techniques": 0.75,
+				"Biotechnological Applications": 0.82,
+				"DNA Technologies": 0.61,
+				"Molecular Components": 0.37,
+				"Advanced Genetic Technologies": 0.96
+			},
+			"relatedness": {
+				"DNA": 0.81,
+				"Genetic Engineering": 0.11,
+				"CRISPR": 0.37,
+				"PCR": 1.0,
+				"Recombinant DNA": 0.91,
+				"Gel Electrophoresis": 0.47,
+				"Restriction Enzymes": 0.26,
+				"Gene Editing": 0.29,
+				"Biotechnology": 0.14,
+				"Insulin Production": 0.57,
+				"Nucleotide": 0.76,
+				"Transformation": 0.27,
+				"DNA Sequencing": 0.64,
+				"Genomic DNA": 1.0,
+				"Gene Therapy": 0.54,
+				"Synthetic Biology": 0.61
+			}
+		},
+		{
+			"name": "Gene Therapy",
+			"level": 3,
+			"categories": {
+				"Gene Manipulation Techniques": 0.92,
+				"Biotechnological Applications": 0.81,
+				"DNA Technologies": 0.6,
+				"Molecular Components": 0.39,
+				"Advanced Genetic Technologies": 0.95
+			},
+			"relatedness": {
+				"DNA": 0.65,
+				"Genetic Engineering": 0.19,
+				"CRISPR": 0.33,
+				"PCR": 0.92,
+				"Recombinant DNA": 0.58,
+				"Gel Electrophoresis": 0.68,
+				"Restriction Enzymes": 0.29,
+				"Gene Editing": 0.42,
+				"Biotechnology": 0.43,
+				"Insulin Production": 0.95,
+				"Nucleotide": 0.52,
+				"Transformation": 0.12,
+				"DNA Sequencing": 0.7,
+				"Genomic DNA": 0.65,
+				"Gene Therapy": 1.0,
+				"Synthetic Biology": 0.58
+			}
+		},
+		{
+			"name": "Synthetic Biology",
+			"level": 2,
+			"categories": {
+				"Gene Manipulation Techniques": 0.98,
+				"Biotechnological Applications": 0.86,
+				"DNA Technologies": 0.52,
+				"Molecular Components": 0.25,
+				"Advanced Genetic Technologies": 0.9
+			},
+			"relatedness": {
+				"DNA": 0.35,
+				"Genetic Engineering": 0.57,
+				"CRISPR": 0.78,
+				"PCR": 0.14,
+				"Recombinant DNA": 0.4,
+				"Gel Electrophoresis": 0.35,
+				"Restriction Enzymes": 0.79,
+				"Gene Editing": 0.53,
+				"Biotechnology": 0.45,
+				"Insulin Production": 0.99,
+				"Nucleotide": 0.38,
+				"Transformation": 0.65,
+				"DNA Sequencing": 0.44,
+				"Genomic DNA": 0.13,
+				"Gene Therapy": 0.44,
+				"Synthetic Biology": 1.0
+			}
+		}
+    ]
+}
+
+

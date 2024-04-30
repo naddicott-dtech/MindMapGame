@@ -27,6 +27,9 @@ func _input(event):
 			var term_rect = get_global_rect()
 			# Check if the click is within the bounds of the ColorRect
 			if event.pressed and term_rect.has_point(event.global_position):
+				if MapGame.active_term != null and MapGame.active_term != self:
+					return # ignore the click because another term is already active
+				MapGame.set_active_term(self)
 				drag_offset = to_local(term_rect.position) - to_local(event.global_position)
 				dragging = true
 				#print("Dragging: ", dragging)
@@ -34,6 +37,7 @@ func _input(event):
 				z_index = 1000 # temporarily set a high z_index to draw it on top
 			elif not event.pressed and dragging:
 				dragging = false
+				MapGame.clear_active_term()
 				#print("Dragging: ", dragging)
 				z_index = original_z_index + num_drops
 				num_drops += 1

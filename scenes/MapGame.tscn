@@ -1,9 +1,22 @@
-[gd_scene load_steps=2 format=3 uid="uid://cvd5bhsux86o1"]
+[gd_scene load_steps=4 format=3 uid="uid://cvd5bhsux86o1"]
 
 [ext_resource type="Script" path="res://scripts/MapGame.gd" id="1_wdwfk"]
+[ext_resource type="Script" path="res://scripts/Background.gd" id="2_vllbn"]
+[ext_resource type="FontFile" uid="uid://16q41s3wy1sc" path="res://Arial_Bold.ttf" id="3_q2bbl"]
 
 [node name="MapGame" type="Node2D"]
 script = ExtResource("1_wdwfk")
+
+[node name="Background" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0, 0.623529, 0.623529, 1)
+script = ExtResource("2_vllbn")
 
 [node name="UI" type="Control" parent="."]
 layout_mode = 3
@@ -34,18 +47,26 @@ alignment = 2
 
 [node name="MoveToolButton" type="Button" parent="UI/CenterContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_q2bbl")
+theme_override_font_sizes/font_size = 20
 text = "Move Tool"
 
 [node name="ConnectTermsToolButton" type="Button" parent="UI/CenterContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_q2bbl")
+theme_override_font_sizes/font_size = 20
 text = "Connect Tool"
 
 [node name="Disconnect" type="Button" parent="UI/CenterContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_q2bbl")
+theme_override_font_sizes/font_size = 20
 text = "Disconnect"
 
 [node name="CalculateScoreButton" type="Button" parent="UI/CenterContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_q2bbl")
+theme_override_font_sizes/font_size = 20
 text = "Calculate Score"
 
 [node name="ScoreBox" type="RichTextLabel" parent="UI"]

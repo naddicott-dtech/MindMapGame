@@ -1,7 +1,7 @@
 extends Node2D
 # the path to the JSON file
 #var json_path = "res://data/NeuronsData.json"
-var json_path = "res://data/NonMendel.json"
+var json_path = "res://data/Biotech.json"
 var term_scene_path = "res://scenes/Term.tscn"
 var connector_line_scene_path = "res://scenes/ConnectorLine.tscn"
 enum Tools {MOVE, CONNECT, DISCONNECT}
@@ -9,6 +9,7 @@ var current_tool = Tools.MOVE
 var first_clicked_term = null
 var line_in_progress = null
 var term_connections = {}
+var active_term = null
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -16,6 +17,8 @@ func _ready():
 	var json_data = load_and_parse_json()
 	if json_data != null:
 		process_json(json_data)
+	var move_tool_button = get_node("UI/CenterContainer/VBoxContainer/HBoxContainer/MoveToolButton")
+	move_tool_button.grab_focus() # this makes the 'Move Tool" button the focused button
 	# instantiate_term("Example Term", Vector2(200,200))
 
 # Function to load content from a JSON file
@@ -195,9 +198,28 @@ func calculate_score():
 	var high_relatedness_value = 0.9
 	var base_score_per_high_relatedness_connection = high_relatedness_value * 10 * high_relatedness_bonus
 	
-	# Hypothetical very high score calculation (for normalizing later)
-	var hypothetical_max_connections = terms_count # assuming one high quality connection per term
-	var a_very_high_score = base_score + hypothetical_max_connections * base_score_per_high_relatedness_connection
+	# OLD Hypothetical very high score calculation (for normalizing later)
+	#var hypothetical_max_connections = terms_count # assuming one high quality connection per term
+	#var a_very_high_score = base_score + hypothetical_max_connections * base_score_per_high_relatedness_connection
+	var a_very_high_score = base_score
+	for term_index in term_connections:
+		var term_instance = get_term_instance_by_index(term_index)
+		var max_relatedness = 0.0
+		
+		#loop through all other terms to find the most related non-self term
+		for other_term_index in term_connections:
+			if other_term_index != term_index:
+				var relatedness = get_relatedness(term_index, other_term_index)
+				if relatedness > max_relatedness:
+					max_relatedness = relatedness
+		
+		#add the contribution of the most related term to the very high score
+		if max_relatedness > high_relatedness_value: # if relatedness qualifies as high
+			a_very_high_score += max_relatedness * 10 * high_relatedness_bonus
+		else:
+			#apply a default contribution if not high relatedness connection is found
+			a_very_high_score += max_relatedness * 5 #assuming max was better than 0.3
+	# The a_very_high_score now reflects the sume of the base score and all the best possible single connections
 	
 	# Calculate base score from connections
 	for term_index in term_connections:
@@ -297,6 +319,12 @@ func _on_disconnect_pressed():
 	current_tool = Tools.DISCONNECT
 	for term in get_tree().get_nodes_in_group("terms"):
 		term.set_tool_mode("disconnect")
+
+func set_active_term(term: Node2D):
+	active_term = term
+
+func clear_active_term():
+	active_term = null
 
 func disconnect_term(term: Node2D):
 	var term_index = term.term_index

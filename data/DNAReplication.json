@@ -1,0 +1,572 @@
+{
+  "just_items": [
+    "DNA Replication", "Enzymes", "Helicase", "DNA Polymerase", "Primase", "Ligase", 
+    "Okazaki Fragments", "Leading Strand", "Lagging Strand", "RNA Primers", "Semi-conservative", 
+    "5’ to 3’ Direction", "Double Helix", "Nucleotide", "Nitrogenous Base", "Deoxyribose", 
+    "Proofreading", "Antiparallel"
+  ],
+  "categories": [
+    "Structural Components", "Synthesis Process", "Enzymatic Functions", 
+    "Molecular Interactions", "Replication Mechanics"
+  ],
+  "item_data": [
+    {
+      "name": "DNA Replication",
+      "level": 1,
+      "categories": {
+        "Structural Components": 0.7,
+        "Synthesis Process": 1.0,
+        "Enzymatic Functions": 1.0,
+        "Molecular Interactions": 0.9,
+        "Replication Mechanics": 0.95
+      },
+      "relatedness": {
+        "DNA Replication": 1.0,
+        "Enzymes": 0.95,
+        "Helicase": 0.95,
+        "DNA Polymerase": 0.95,
+        "Primase": 0.9,
+        "Ligase": 0.9,
+        "Okazaki Fragments": 0.85,
+        "Leading Strand": 0.9,
+        "Lagging Strand": 0.9,
+        "RNA Primers": 0.9,
+        "Semi-conservative": 0.95,
+        "5’ to 3’ Direction": 0.8,
+        "Double Helix": 0.85,
+        "Nucleotide": 0.8,
+        "Nitrogenous Base": 0.75,
+        "Deoxyribose": 0.7,
+        "Proofreading": 0.85,
+        "Antiparallel": 0.8
+      }
+    },
+    {
+      "name": "Enzymes",
+      "level": 2,
+      "categories": {
+        "Structural Components": 0.3,
+        "Synthesis Process": 0.9,
+        "Enzymatic Functions": 1.0,
+        "Molecular Interactions": 0.85,
+        "Replication Mechanics": 0.9
+      },
+      "relatedness": {
+        "DNA Replication": 0.95,
+        "Enzymes": 1.0,
+        "Helicase": 0.9,
+        "DNA Polymerase": 0.9,
+        "Primase": 0.85,
+        "Ligase": 0.85,
+        "Okazaki Fragments": 0.8,
+        "Leading Strand": 0.8,
+        "Lagging Strand": 0.8,
+        "RNA Primers": 0.85,
+        "Semi-conservative": 0.7,
+        "5’ to 3’ Direction": 0.5,
+        "Double Helix": 0.4,
+        "Nucleotide": 0.5,
+        "Nitrogenous Base": 0.4,
+        "Deoxyribose": 0.3,
+        "Proofreading": 0.75,
+        "Antiparallel": 0.4
+      }
+    },
+    {
+      "name": "Helicase",
+      "level": 2,
+      "categories": {
+        "Structural Components": 0.5,
+        "Synthesis Process": 0.95,
+        "Enzymatic Functions": 1.0,
+        "Molecular Interactions": 0.9,
+        "Replication Mechanics": 0.95
+      },
+      "relatedness": {
+        "DNA Replication": 0.95,
+        "Enzymes": 0.9,
+        "Helicase": 1.0,
+        "DNA Polymerase": 0.85,
+        "Primase": 0.85,
+        "Ligase": 0.8,
+        "Okazaki Fragments": 0.8,
+        "Leading Strand": 0.85,
+        "Lagging Strand": 0.85,
+        "RNA Primers": 0.8,
+        "Semi-conservative": 0.8,
+        "5’ to 3’ Direction": 0.6,
+        "Double Helix": 0.5,
+        "Nucleotide": 0.5,
+        "Nitrogenous Base": 0.4,
+        "Deoxyribose": 0.3,
+        "Proofreading": 0.75,
+        "Antiparallel": 0.5
+      }
+    },
+    {
+      "name": "DNA Polymerase",
+      "level": 2,
+      "categories": {
+        "Structural Components": 0.6,
+        "Synthesis Process": 1.0,
+        "Enzymatic Functions": 1.0,
+        "Molecular Interactions": 0.95,
+        "Replication Mechanics": 1.0
+      },
+      "relatedness": {
+        "DNA Replication": 0.95,
+        "Enzymes": 0.9,
+        "Helicase": 0.85,
+        "DNA Polymerase": 1.0,
+        "Primase": 0.9,
+        "Ligase": 0.85,
+        "Okazaki Fragments": 0.9,
+        "Leading Strand": 0.9,
+        "Lagging Strand": 0.9,
+        "RNA Primers": 0.9,
+        "Semi-conservative": 0.85,
+        "5’ to 3’ Direction": 0.7,
+        "Double Helix": 0.6,
+        "Nucleotide": 0.7,
+        "Nitrogenous Base": 0.6,
+        "Deoxyribose": 0.5,
+        "Proofreading": 0.9,
+        "Antiparallel": 0.6
+      }
+    },
+        {
+      "name": "Primase",
+      "level": 2,
+      "categories": {
+        "Structural Components": 0.4,
+        "Synthesis Process": 0.9,
+        "Enzymatic Functions": 0.95,
+        "Molecular Interactions": 0.85,
+        "Replication Mechanics": 0.9
+      },
+      "relatedness": {
+        "DNA Replication": 0.9,
+        "Enzymes": 0.85,
+        "Helicase": 0.85,
+        "DNA Polymerase": 0.9,
+        "Primase": 1.0,
+        "Ligase": 0.75,
+        "Okazaki Fragments": 0.8,
+        "Leading Strand": 0.75,
+        "Lagging Strand": 0.75,
+        "RNA Primers": 0.9,
+        "Semi-conservative": 0.7,
+        "5’ to 3’ Direction": 0.6,
+        "Double Helix": 0.5,
+        "Nucleotide": 0.5,
+        "Nitrogenous Base": 0.4,
+        "Deoxyribose": 0.3,
+        "Proofreading": 0.65,
+        "Antiparallel": 0.5
+      }
+    },
+    {
+      "name": "Ligase",
+      "level": 2,
+      "categories": {
+        "Structural Components": 0.4,
+        "Synthesis Process": 0.9,
+        "Enzymatic Functions": 0.95,
+        "Molecular Interactions": 0.85,
+        "Replication Mechanics": 0.9
+      },
+      "relatedness": {
+        "DNA Replication": 0.9,
+        "Enzymes": 0.85,
+        "Helicase": 0.8,
+        "DNA Polymerase": 0.85,
+        "Primase": 0.75,
+        "Ligase": 1.0,
+        "Okazaki Fragments": 0.85,
+        "Leading Strand": 0.7,
+        "Lagging Strand": 0.7,
+        "RNA Primers": 0.75,
+        "Semi-conservative": 0.65,
+        "5’ to 3’ Direction": 0.5,
+        "Double Helix": 0.45,
+        "Nucleotide": 0.5,
+        "Nitrogenous Base": 0.4,
+        "Deoxyribose": 0.35,
+        "Proofreading": 0.75,
+        "Antiparallel": 0.5
+      }
+    },
+    {
+      "name": "Okazaki Fragments",
+      "level": 2,
+      "categories": {
+        "Structural Components": 0.5,
+        "Synthesis Process": 0.95,
+        "Enzymatic Functions": 0.85,
+        "Molecular Interactions": 0.9,
+        "Replication Mechanics": 0.95
+      },
+      "relatedness": {
+        "DNA Replication": 0.85,
+        "Enzymes": 0.8,
+        "Helicase": 0.8,
+        "DNA Polymerase": 0.9,
+        "Primase": 0.8,
+        "Ligase": 0.85,
+        "Okazaki Fragments": 1.0,
+        "Leading Strand": 0.9,
+        "Lagging Strand": 0.95,
+        "RNA Primers": 0.8,
+        "Semi-conservative": 0.75,
+        "5’ to 3’ Direction": 0.65,
+        "Double Helix": 0.6,
+        "Nucleotide": 0.6,
+        "Nitrogenous Base": 0.55,
+        "Deoxyribose": 0.5,
+        "Proofreading": 0.8,
+        "Antiparallel": 0.65
+      }
+    },
+    {
+      "name": "Leading Strand",
+      "level": 2,
+      "categories": {
+        "Structural Components": 0.6,
+        "Synthesis Process": 0.95,
+        "Enzymatic Functions": 0.85,
+        "Molecular Interactions": 0.9,
+        "Replication Mechanics": 1.0
+      },
+      "relatedness": {
+        "DNA Replication": 0.9,
+        "Enzymes": 0.8,
+        "Helicase": 0.85,
+        "DNA Polymerase": 0.9,
+        "Primase": 0.75,
+        "Ligase": 0.7,
+        "Okazaki Fragments": 0.65,
+        "Leading Strand": 1.0,
+        "Lagging Strand": 0.9,
+        "RNA Primers": 0.75,
+        "Semi-conservative": 0.85,
+        "5’ to 3’ Direction": 0.95,
+        "Double Helix": 0.75,
+        "Nucleotide": 0.65,
+        "Nitrogenous Base": 0.6,
+        "Deoxyribose": 0.55,
+        "Proofreading": 0.8,
+        "Antiparallel": 0.7
+      }
+    },
+    {
+      "name": "Lagging Strand",
+      "level": 2,
+      "categories": {
+        "Structural Components": 0.6,
+        "Synthesis Process": 0.95,
+        "Enzymatic Functions": 0.85,
+        "Molecular Interactions": 0.9,
+        "Replication Mechanics": 1.0
+      },
+      "relatedness": {
+        "DNA Replication": 0.9,
+        "Enzymes": 0.8,
+        "Helicase": 0.85,
+        "DNA Polymerase": 0.9,
+        "Primase": 0.75,
+        "Ligase": 0.7,
+        "Okazaki Fragments": 0.95,
+        "Leading Strand": 0.9,
+        "Lagging Strand": 1.0,
+        "RNA Primers": 0.8,
+        "Semi-conservative": 0.85,
+        "5’ to 3’ Direction": 0.95,
+        "Double Helix": 0.75,
+        "Nucleotide": 0.65,
+        "Nitrogenous Base": 0.6,
+        "Deoxyribose": 0.55,
+        "Proofreading": 0.8,
+        "Antiparallel": 0.7
+      }
+    },
+    {
+      "name": "RNA Primers",
+      "level": 3,
+      "categories": {
+        "Structural Components": 0.3,
+        "Synthesis Process": 0.9,
+        "Enzymatic Functions": 0.95,
+        "Molecular Interactions": 0.8,
+        "Replication Mechanics": 0.85
+      },
+      "relatedness": {
+        "DNA Replication": 0.9,
+        "Enzymes": 0.85,
+        "Helicase": 0.8,
+        "DNA Polymerase": 0.9,
+        "Primase": 0.9,
+        "Ligase": 0.75,
+        "Okazaki Fragments": 0.8,
+        "Leading Strand": 0.75,
+        "Lagging Strand": 0.8,
+        "RNA Primers": 1.0,
+        "Semi-conservative": 0.7,
+        "5’ to 3’ Direction": 0.75,
+        "Double Helix": 0.5,
+        "Nucleotide": 0.6,
+        "Nitrogenous Base": 0.5,
+        "Deoxyribose": 0.4,
+        "Proofreading": 0.65,
+        "Antiparallel": 0.5
+      }
+    },
+    {
+      "name": "Semi-conservative",
+      "level": 1,
+      "categories": {
+        "Structural Components": 0.5,
+        "Synthesis Process": 1.0,
+        "Enzymatic Functions": 0.9,
+        "Molecular Interactions": 0.95,
+        "Replication Mechanics": 1.0
+      },
+      "relatedness": {
+        "DNA Replication": 0.95,
+        "Enzymes": 0.7,
+        "Helicase": 0.8,
+        "DNA Polymerase": 0.85,
+        "Primase": 0.7,
+        "Ligase": 0.65,
+        "Okazaki Fragments": 0.75,
+        "Leading Strand": 0.85,
+        "Lagging Strand": 0.85,
+        "RNA Primers": 0.7,
+        "Semi-conservative": 1.0,
+        "5’ to 3’ Direction": 0.9,
+        "Double Helix": 0.8,
+        "Nucleotide": 0.6,
+        "Nitrogenous Base": 0.5,
+        "Deoxyribose": 0.4,
+        "Proofreading": 0.8,
+        "Antiparallel": 0.75
+      }
+    },
+    {
+      "name": "5’ to 3’ Direction",
+      "level": 3,
+      "categories": {
+        "Structural Components": 0.4,
+        "Synthesis Process": 0.9,
+        "Enzymatic Functions": 0.8,
+        "Molecular Interactions": 0.85,
+        "Replication Mechanics": 0.9
+      },
+      "relatedness": {
+        "DNA Replication": 0.8,
+        "Enzymes": 0.5,
+        "Helicase": 0.6,
+        "DNA Polymerase": 0.7,
+        "Primase": 0.6,
+        "Ligase": 0.5,
+        "Okazaki Fragments": 0.65,
+        "Leading Strand": 0.95,
+        "Lagging Strand": 0.95,
+        "RNA Primers": 0.75,
+        "Semi-conservative": 0.9,
+        "5’ to 3’ Direction": 1.0,
+        "Double Helix": 0.75,
+        "Nucleotide": 0.7,
+        "Nitrogenous Base": 0.6,
+        "Deoxyribose": 0.5,
+        "Proofreading": 0.7,
+        "Antiparallel": 0.9
+      }
+    },
+    {
+      "name": "Double Helix",
+      "level": 1,
+      "categories": {
+        "Structural Components": 0.95,
+        "Synthesis Process": 0.8,
+        "Enzymatic Functions": 0.7,
+        "Molecular Interactions": 0.9,
+        "Replication Mechanics": 0.85
+      },
+      "relatedness": {
+        "DNA Replication": 0.85,
+        "Enzymes": 0.4,
+        "Helicase": 0.5,
+        "DNA Polymerase": 0.6,
+        "Primase": 0.5,
+        "Ligase": 0.45,
+        "Okazaki Fragments": 0.6,
+        "Leading Strand": 0.75,
+        "Lagging Strand": 0.75,
+        "RNA Primers": 0.5,
+        "Semi-conservative": 0.8,
+        "5’ to 3’ Direction": 0.75,
+        "Double Helix": 1.0,
+        "Nucleotide": 0.85,
+        "Nitrogenous Base": 0.8,
+        "Deoxyribose": 0.9,
+        "Proofreading": 0.6,
+        "Antiparallel": 0.95
+      }
+    },
+    {
+      "name": "Nucleotide",
+      "level": 2,
+      "categories": {
+        "Structural Components": 0.95,
+        "Synthesis Process": 0.85,
+        "Enzymatic Functions": 0.7,
+        "Molecular Interactions": 0.9,
+        "Replication Mechanics": 0.8
+      },
+      "relatedness": {
+        "DNA Replication": 0.8,
+        "Enzymes": 0.5,
+        "Helicase": 0.5,
+        "DNA Polymerase": 0.7,
+        "Primase": 0.5,
+        "Ligase": 0.5,
+        "Okazaki Fragments": 0.6,
+        "Leading Strand": 0.65,
+        "Lagging Strand": 0.65,
+        "RNA Primers": 0.6,
+        "Semi-conservative": 0.6,
+        "5’ to 3’ Direction": 0.7,
+        "Double Helix": 0.85,
+        "Nucleotide": 1.0,
+        "Nitrogenous Base": 0.95,
+        "Deoxyribose": 0.9,
+        "Proofreading": 0.7,
+        "Antiparallel": 0.8
+      }
+    },
+    {
+      "name": "Nitrogenous Base",
+      "level": 3,
+      "categories": {
+        "Structural Components": 0.9,
+        "Synthesis Process": 0.7,
+        "Enzymatic Functions": 0.6,
+        "Molecular Interactions": 0.95,
+        "Replication Mechanics": 0.75
+      },
+      "relatedness": {
+        "DNA Replication": 0.75,
+        "Enzymes": 0.4,
+        "Helicase": 0.4,
+        "DNA Polymerase": 0.6,
+        "Primase": 0.4,
+        "Ligase": 0.4,
+        "Okazaki Fragments": 0.55,
+        "Leading Strand": 0.6,
+        "Lagging Strand": 0.6,
+        "RNA Primers": 0.5,
+        "Semi-conservative": 0.5,
+        "5’ to 3’ Direction": 0.6,
+        "Double Helix": 0.8,
+        "Nucleotide": 0.95,
+        "Nitrogenous Base": 1.0,
+        "Deoxyribose": 0.85,
+        "Proofreading": 0.65,
+        "Antiparallel": 0.7
+      }
+    },
+    {
+      "name": "Deoxyribose",
+      "level": 3,
+      "categories": {
+        "Structural Components": 0.95,
+        "Synthesis Process": 0.75,
+        "Enzymatic Functions": 0.6,
+        "Molecular Interactions": 0.8,
+        "Replication Mechanics": 0.7
+      },
+      "relatedness": {
+        "DNA Replication": 0.7,
+        "Enzymes": 0.3,
+        "Helicase": 0.3,
+        "DNA Polymerase": 0.5,
+        "Primase": 0.3,
+        "Ligase": 0.35,
+        "Okazaki Fragments": 0.5,
+        "Leading Strand": 0.55,
+        "Lagging Strand": 0.55,
+        "RNA Primers": 0.4,
+        "Semi-conservative": 0.4,
+        "5’ to 3’ Direction": 0.5,
+        "Double Helix": 0.9,
+        "Nucleotide": 0.9,
+        "Nitrogenous Base": 0.85,
+        "Deoxyribose": 1.0,
+        "Proofreading": 0.6,
+        "Antiparallel": 0.75
+      }
+    },
+    {
+      "name": "Proofreading",
+      "level": 2,
+      "categories": {
+        "Structural Components": 0.3,
+        "Synthesis Process": 0.85,
+        "Enzymatic Functions": 0.95,
+        "Molecular Interactions": 0.9,
+        "Replication Mechanics": 1.0
+      },
+      "relatedness": {
+        "DNA Replication": 0.85,
+        "Enzymes": 0.75,
+        "Helicase": 0.75,
+        "DNA Polymerase": 0.9,
+        "Primase": 0.65,
+        "Ligase": 0.75,
+        "Okazaki Fragments": 0.8,
+        "Leading Strand": 0.8,
+        "Lagging Strand": 0.8,
+        "RNA Primers": 0.65,
+        "Semi-conservative": 0.8,
+        "5’ to 3’ Direction": 0.7,
+        "Double Helix": 0.6,
+        "Nucleotide": 0.7,
+        "Nitrogenous Base": 0.65,
+        "Deoxyribose": 0.6,
+        "Proofreading": 1.0,
+        "Antiparallel": 0.7
+      }
+    },
+    {
+      "name": "Antiparallel",
+      "level": 1,
+      "categories": {
+        "Structural Components": 0.85,
+        "Synthesis Process": 0.8,
+        "Enzymatic Functions": 0.7,
+        "Molecular Interactions": 0.95,
+        "Replication Mechanics": 0.9
+      },
+      "relatedness": {
+        "DNA Replication": 0.8,
+        "Enzymes": 0.4,
+        "Helicase": 0.5,
+        "DNA Polymerase": 0.6,
+        "Primase": 0.5,
+        "Ligase": 0.5,
+        "Okazaki Fragments": 0.65,
+        "Leading Strand": 0.7,
+        "Lagging Strand": 0.7,
+        "RNA Primers": 0.5,
+        "Semi-conservative": 0.75,
+        "5’ to 3’ Direction": 0.9,
+        "Double Helix": 0.95,
+        "Nucleotide": 0.8,
+        "Nitrogenous Base": 0.7,
+        "Deoxyribose": 0.75,
+        "Proofreading": 0.7,
+        "Antiparallel": 1.0
+      }
+    }
+  ]
+}
