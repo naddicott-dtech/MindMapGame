@@ -1,2 +1,10 @@
 # Godot 4+ specific ignores
 .godot/
+MacExport/.DS_Store
+MacExport/index.dmg
+MacExport/MindMapGame.app/Contents/_CodeSignature/CodeResources
+MacExport/MindMapGame.app/Contents/Info.plist
+MacExport/MindMapGame.app/Contents/MacOS/MindMapGame
+MacExport/MindMapGame.app/Contents/PkgInfo
+MacExport/MindMapGame.app/Contents/Resources/icon.icns
+MacExport/MindMapGame.app/Contents/Resources/MindMapGame.pck
