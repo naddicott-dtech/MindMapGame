@@ -1,0 +1,451 @@
+{
+    "just_items": [
+        "DNA",
+        "RNA",
+        "Protein",
+        "Transcription",
+        "Translation",
+        "mRNA",
+        "tRNA",
+        "rRNA",
+        "Ribosome",
+        "Amino Acid",
+        "Codon",
+        "RNA Polymerase",
+        "Nucleus",
+        "Cytoplasm",
+        "Gene"
+    ],
+    "categories": [
+        "Molecular Components",
+        "Synthetic Processes",
+        "Genetic Information Flow",
+        "Cellular Structures",
+        "Gene Expression Regulation"
+    ],
+    "item_data": [
+        {
+            "name": "DNA",
+            "level": 1,
+            "categories": {
+                "Molecular Components": 1.0,
+                "Synthetic Processes": 0.5,
+                "Genetic Information Flow": 0.9,
+                "Cellular Structures": 0.1,
+                "Gene Expression Regulation": 0.8
+            },
+            "relatedness": {
+                "DNA": 1.0,
+                "RNA": 0.9,
+                "Protein": 0.5,
+                "Transcription": 0.95,
+                "Translation": 0.2,
+                "mRNA": 0.9,
+                "tRNA": 0.2,
+                "rRNA": 0.2,
+                "Ribosome": 0.3,
+                "Amino Acid": 0.1,
+                "Codon": 0.3,
+                "RNA Polymerase": 0.85,
+                "Nucleus": 0.7,
+                "Cytoplasm": 0.4,
+                "Gene": 0.95
+            }
+        },
+		{
+			"name": "RNA",
+			"level": 1,
+			"categories": {
+				"Molecular Components": 1.0,
+				"Synthetic Processes": 0.9,
+				"Genetic Information Flow": 1.0,
+				"Cellular Structures": 0.2,
+				"Gene Expression Regulation": 0.9
+			},
+			"relatedness": {
+				"DNA": 0.9,
+				"RNA": 1.0,
+				"Protein": 0.8,
+				"Transcription": 0.95,
+				"Translation": 0.9,
+				"mRNA": 0.95,
+				"tRNA": 0.85,
+				"rRNA": 0.85,
+				"Ribosome": 0.7,
+				"Amino Acid": 0.6,
+				"Codon": 0.6,
+				"RNA Polymerase": 0.95,
+				"Nucleus": 0.8,
+				"Cytoplasm": 0.6,
+				"Gene": 0.85
+			}
+		},
+		{
+			"name": "Protein",
+			"level": 1,
+			"categories": {
+				"Molecular Components": 1.0,
+				"Synthetic Processes": 1.0,
+				"Genetic Information Flow": 0.7,
+				"Cellular Structures": 0.9,
+				"Gene Expression Regulation": 0.4
+			},
+			"relatedness": {
+				"DNA": 0.5,
+				"RNA": 0.8,
+				"Protein": 1.0,
+				"Transcription": 0.4,
+				"Translation": 0.95,
+				"mRNA": 0.8,
+				"tRNA": 0.8,
+				"rRNA": 0.8,
+				"Ribosome": 0.95,
+				"Amino Acid": 0.95,
+				"Codon": 0.5,
+				"RNA Polymerase": 0.4,
+				"Nucleus": 0.3,
+				"Cytoplasm": 0.9,
+				"Gene": 0.5
+			}
+		},
+		{
+			"name": "Transcription",
+			"level": 2,
+			"categories": {
+				"Molecular Components": 0.5,
+				"Synthetic Processes": 1.0,
+				"Genetic Information Flow": 1.0,
+				"Cellular Structures": 0.1,
+				"Gene Expression Regulation": 0.9
+			},
+			"relatedness": {
+				"DNA": 0.95,
+				"RNA": 0.95,
+				"Protein": 0.4,
+				"Transcription": 1.0,
+				"Translation": 0.4,
+				"mRNA": 0.95,
+				"tRNA": 0.2,
+				"rRNA": 0.2,
+				"Ribosome": 0.4,
+				"Amino Acid": 0.1,
+				"Codon": 0.2,
+				"RNA Polymerase": 0.95,
+				"Nucleus": 0.95,
+				"Cytoplasm": 0.2,
+				"Gene": 0.95
+			}
+		},
+		{
+			"name": "Translation",
+			"level": 2,
+			"categories": {
+				"Molecular Components": 0.5,
+				"Synthetic Processes": 1.0,
+				"Genetic Information Flow": 1.0,
+				"Cellular Structures": 0.2,
+				"Gene Expression Regulation": 0.8
+			},
+			"relatedness": {
+				"DNA": 0.2,
+				"RNA": 0.9,
+				"Protein": 0.95,
+				"Transcription": 0.4,
+				"Translation": 1.0,
+				"mRNA": 0.9,
+				"tRNA": 0.9,
+				"rRNA": 0.9,
+				"Ribosome": 0.95,
+				"Amino Acid": 0.9,
+				"Codon": 0.8,
+				"RNA Polymerase": 0.4,
+				"Nucleus": 0.2,
+				"Cytoplasm": 0.9,
+				"Gene": 0.4
+			}
+		},
+		{
+			"name": "mRNA",
+			"level": 2,
+			"categories": {
+				"Molecular Components": 0.9,
+				"Synthetic Processes": 0.9,
+				"Genetic Information Flow": 1.0,
+				"Cellular Structures": 0.2,
+				"Gene Expression Regulation": 0.9
+			},
+			"relatedness": {
+				"DNA": 0.9,
+				"RNA": 0.95,
+				"Protein": 0.8,
+				"Transcription": 0.95,
+				"Translation": 0.9,
+				"mRNA": 1.0,
+				"tRNA": 0.8,
+				"rRNA": 0.5,
+				"Ribosome": 0.9,
+				"Amino Acid": 0.7,
+				"Codon": 0.9,
+				"RNA Polymerase": 0.95,
+				"Nucleus": 0.8,
+				"Cytoplasm": 0.7,
+				"Gene": 0.9
+			}
+		},
+		{
+			"name": "tRNA",
+			"level": 2,
+			"categories": {
+				"Molecular Components": 0.8,
+				"Synthetic Processes": 0.8,
+				"Genetic Information Flow": 1.0,
+				"Cellular Structures": 0.2,
+				"Gene Expression Regulation": 0.5
+			},
+			"relatedness": {
+				"DNA": 0.2,
+				"RNA": 0.85,
+				"Protein": 0.8,
+				"Transcription": 0.2,
+				"Translation": 0.9,
+				"mRNA": 0.8,
+				"tRNA": 1.0,
+				"rRNA": 0.8,
+				"Ribosome": 0.9,
+				"Amino Acid": 0.8,
+				"Codon": 0.5,
+				"RNA Polymerase": 0.2,
+				"Nucleus": 0.2,
+				"Cytoplasm": 0.8,
+				"Gene": 0.3
+			}
+		},
+		{
+			"name": "rRNA",
+			"level": 2,
+			"categories": {
+				"Molecular Components": 0.9,
+				"Synthetic Processes": 0.8,
+				"Genetic Information Flow": 0.5,
+				"Cellular Structures": 1.0,
+				"Gene Expression Regulation": 0.2
+			},
+			"relatedness": {
+				"DNA": 0.2,
+				"RNA": 0.85,
+				"Protein": 0.8,
+				"Transcription": 0.2,
+				"Translation": 0.9,
+				"mRNA": 0.5,
+				"tRNA": 0.8,
+				"rRNA": 1.0,
+				"Ribosome": 0.95,
+				"Amino Acid": 0.4,
+				"Codon": 0.3,
+				"RNA Polymerase": 0.2,
+				"Nucleus": 0.3,
+				"Cytoplasm": 0.8,
+				"Gene": 0.3
+			}
+		},
+		{
+			"name": "Ribosome",
+			"level": 1,
+			"categories": {
+				"Molecular Components": 0.8,
+				"Synthetic Processes": 1.0,
+				"Genetic Information Flow": 0.9,
+				"Cellular Structures": 1.0,
+				"Gene Expression Regulation": 0.3
+			},
+			"relatedness": {
+				"DNA": 0.3,
+				"RNA": 0.7,
+				"Protein": 0.95,
+				"Transcription": 0.4,
+				"Translation": 0.95,
+				"mRNA": 0.9,
+				"tRNA": 0.9,
+				"rRNA": 0.95,
+				"Ribosome": 1.0,
+				"Amino Acid": 0.95,
+				"Codon": 0.5,
+				"RNA Polymerase": 0.4,
+				"Nucleus": 0.4,
+				"Cytoplasm": 1.0,
+				"Gene": 0.5
+			}
+		},
+		{
+			"name": "Amino Acid",
+			"level": 3,
+			"categories": {
+				"Molecular Components": 1.0,
+				"Synthetic Processes": 0.95,
+				"Genetic Information Flow": 0.7,
+				"Cellular Structures": 0.4,
+				"Gene Expression Regulation": 0.1
+			},
+			"relatedness": {
+				"DNA": 0.1,
+				"RNA": 0.6,
+				"Protein": 0.95,
+				"Transcription": 0.1,
+				"Translation": 0.9,
+				"mRNA": 0.7,
+				"tRNA": 0.8,
+				"rRNA": 0.4,
+				"Ribosome": 0.95,
+				"Amino Acid": 1.0,
+				"Codon": 0.8,
+				"RNA Polymerase": 0.1,
+				"Nucleus": 0.2,
+				"Cytoplasm": 0.9,
+				"Gene": 0.2
+			}
+		},
+		{
+			"name": "Codon",
+			"level": 3,
+			"categories": {
+				"Molecular Components": 0.7,
+				"Synthetic Processes": 0.8,
+				"Genetic Information Flow": 0.9,
+				"Cellular Structures": 0.1,
+				"Gene Expression Regulation": 0.2
+			},
+			"relatedness": {
+				"DNA": 0.3,
+				"RNA": 0.6,
+				"Protein": 0.5,
+				"Transcription": 0.2,
+				"Translation": 0.8,
+				"mRNA": 0.9,
+				"tRNA": 0.5,
+				"rRNA": 0.3,
+				"Ribosome": 0.5,
+				"Amino Acid": 0.8,
+				"Codon": 1.0,
+				"RNA Polymerase": 0.2,
+				"Nucleus": 0.1,
+				"Cytoplasm": 0.4,
+				"Gene": 0.3
+			}
+		},
+		{
+			"name": "RNA Polymerase",
+			"level": 1,
+			"categories": {
+				"Molecular Components": 0.6,
+				"Synthetic Processes": 1.0,
+				"Genetic Information Flow": 1.0,
+				"Cellular Structures": 0.1,
+				"Gene Expression Regulation": 0.9
+			},
+			"relatedness": {
+				"DNA": 0.85,
+				"RNA": 0.95,
+				"Protein": 0.4,
+				"Transcription": 0.95,
+				"Translation": 0.4,
+				"mRNA": 0.95,
+				"tRNA": 0.2,
+				"rRNA": 0.2,
+				"Ribosome": 0.4,
+				"Amino Acid": 0.1,
+				"Codon": 0.2,
+				"RNA Polymerase": 1.0,
+				"Nucleus": 0.95,
+				"Cytoplasm": 0.2,
+				"Gene": 0.95
+			}
+		},
+		{
+			"name": "Nucleus",
+			"level": 1,
+			"categories": {
+				"Molecular Components": 0.5,
+				"Synthetic Processes": 0.4,
+				"Genetic Information Flow": 1.0,
+				"Cellular Structures": 1.0,
+				"Gene Expression Regulation": 0.8
+			},
+			"relatedness": {
+				"DNA": 0.7,
+				"RNA": 0.8,
+				"Protein": 0.3,
+				"Transcription": 0.95,
+				"Translation": 0.2,
+				"mRNA": 0.8,
+				"tRNA": 0.2,
+				"rRNA": 0.3,
+				"Ribosome": 0.4,
+				"Amino Acid": 0.2,
+				"Codon": 0.1,
+				"RNA Polymerase": 0.95,
+				"Nucleus": 1.0,
+				"Cytoplasm": 0.5,
+				"Gene": 0.9
+			}
+		},
+		{
+			"name": "Cytoplasm",
+			"level": 2,
+			"categories": {
+				"Molecular Components": 0.5,
+				"Synthetic Processes": 0.7,
+				"Genetic Information Flow": 0.4,
+				"Cellular Structures": 1.0,
+				"Gene Expression Regulation": 0.2
+			},
+			"relatedness": {
+				"DNA": 0.4,
+				"RNA": 0.6,
+				"Protein": 0.9,
+				"Transcription": 0.2,
+				"Translation": 0.9,
+				"mRNA": 0.7,
+				"tRNA": 0.8,
+				"rRNA": 0.8,
+				"Ribosome": 1.0,
+				"Amino Acid": 0.9,
+				"Codon": 0.4,
+				"RNA Polymerase": 0.2,
+				"Nucleus": 0.5,
+				"Cytoplasm": 1.0,
+				"Gene": 0.4
+			}
+		},
+		{
+			"name": "Gene",
+			"level": 1,
+			"categories": {
+				"Molecular Components": 0.9,
+				"Synthetic Processes": 0.9,
+				"Genetic Information Flow": 1.0,
+				"Cellular Structures": 0.2,
+				"Gene Expression Regulation": 1.0
+			},
+			"relatedness": {
+				"DNA": 0.95,
+				"RNA": 0.85,
+				"Protein": 0.5,
+				"Transcription": 0.95,
+				"Translation": 0.4,
+				"mRNA": 0.9,
+				"tRNA": 0.3,
+				"rRNA": 0.3,
+				"Ribosome": 0.5,
+				"Amino Acid": 0.2,
+				"Codon": 0.3,
+				"RNA Polymerase": 0.95,
+				"Nucleus": 0.9,
+				"Cytoplasm": 0.4,
+				"Gene": 1.0
+			}
+		}
+	]
+}
+
+
+

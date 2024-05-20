@@ -1,6 +1,6 @@
 extends Line2D
 
-class_name ConnectorLine
+class_name MyConnectorLine
 
 var origin_term_index: int = -1
 var end_term_index: int = -1

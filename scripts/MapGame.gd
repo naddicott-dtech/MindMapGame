@@ -1,7 +1,7 @@
 extends Node2D
 # the path to the JSON file
 #var json_path = "res://data/NeuronsData.json"
-var json_path = "res://data/Biotech.json"
+var json_path = "res://data/NaturalSelectionDrift.json"
 var term_scene_path = "res://scenes/Term.tscn"
 var connector_line_scene_path = "res://scenes/ConnectorLine.tscn"
 enum Tools {MOVE, CONNECT, DISCONNECT}
@@ -41,43 +41,57 @@ func load_and_parse_json():
 	
 # Placeholder function to do something with parsed data
 func process_json(json_data):
-	#print(json_data)
 	var current_position = Vector2(50, 50)
 	var term_offset = Vector2(0, 60)
-	var column_width = 150 #width of each term
+	var column_width = 150 # width of each term
 	var screen_height = DisplayServer.screen_get_size().y # get the window height
-	
+	var term_index = 0
+	var term_level = 0
+	var term_category_ranks = {"cat 1": 1.0, "cat 2": 0.5}
+	var term_term_ranks = {"term 1": 1.0, "term 2": 0.5}
+
 	if json_data.size() > 0:
 		var just_items = json_data["just_items"]
 		var item_data = json_data["item_data"]
-		var term_index = 0
-		var term_level = 0
-		var term_category_ranks = {"cat 1": 1.0, "cat 2": 0.5}
-		var term_term_ranks = {"term 1": 1.0, "term 2": 0.5}
-		
+
 		if just_items.size() > 0:
 			for i in range(just_items.size()):
 				var term_name = just_items[i]
 				var term_dict = null
-				# find the dicitonary for the term
+				# find the dictionary for the term
 				for data in item_data:
 					if data["name"] == term_name:
 						term_dict = data
 						break
 				# if term data was found, get the details
 				if term_dict:
+					print("found term_dict for:", term_name)
 					term_index = i # the loop index is the term index
-					term_level = int(term_dict["level"])
-					term_category_ranks = term_dict["categories"]
-					term_term_ranks = term_dict["relatedness"]
+					if(int(term_dict["level"])):
+						term_level = int(term_dict["level"])
+					if(term_dict["categories"]):
+						term_category_ranks = term_dict["categories"]
+					if(term_dict["relatedness"]):
+						term_term_ranks = term_dict["relatedness"]
+					print("Term details - level:", term_level, "Categories:", term_category_ranks, "Relatedness:", term_term_ranks)
+				else:
+					# handle missing term data
+					print("Missing data for:", term_name)
+					continue
+
+				# Debugging output
+				print("Processing term:", term_name)
+				print("Level:", term_level)
+				print("Categories:", term_category_ranks)
+				print("Relatedness:", term_term_ranks)
+
 				if current_position.y + term_offset.y > screen_height:
-					#start a new column
+					# start a new column
 					current_position.y = term_offset.y
 					current_position.x += column_width
 				current_position += term_offset # staggered position
 				instantiate_term(term_name, current_position, term_index, term_level, term_category_ranks, term_term_ranks)
 				term_connections[i] = {"start_lines": [], "end_lines": []}
-				
 
 func instantiate_term(term_name: String, my_position: Vector2, index: int, level: int, category_ranks: Dictionary, term_ranks: Dictionary):
 	var term_scene: PackedScene = load(term_scene_path)
@@ -94,9 +108,9 @@ func instantiate_term(term_name: String, my_position: Vector2, index: int, level
 		term_instance.MapGame = self
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 
-func instantiate_connector_line() -> ConnectorLine:
+func instantiate_connector_line() -> MyConnectorLine:
 	var connector_line_scene = preload("res://scenes/ConnectorLine.tscn")
-	var connector_line = connector_line_scene.instantiate() as ConnectorLine
+	var connector_line = connector_line_scene.instantiate() as MyConnectorLine
 	# set up connector line with additional properties if necessary
 	return connector_line
 	
@@ -399,5 +413,6 @@ func update_line_positions(line, start_node, end_node):
 		best_end_point = line.get_parent().to_local(best_end_point)
 		
 	# Set the line's points
-	line.points[0] = best_start_point
-	line.points[1] = best_end_point
+	if line.get_parent():
+		line.points[0] = best_start_point
+		line.points[1] = best_end_point
