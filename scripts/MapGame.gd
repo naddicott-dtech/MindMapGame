@@ -1,7 +1,7 @@
 extends Node2D
 # the path to the JSON file
 #var json_path = "res://data/NeuronsData.json"
-var json_path = "res://data/NaturalSelectionDrift.json"
+var json_path = "res://data/BrainRegions.json"
 var term_scene_path = "res://scenes/Term.tscn"
 var connector_line_scene_path = "res://scenes/ConnectorLine.tscn"
 enum Tools {MOVE, CONNECT, DISCONNECT}
@@ -65,7 +65,7 @@ func process_json(json_data):
 						break
 				# if term data was found, get the details
 				if term_dict:
-					print("found term_dict for:", term_name)
+					# print("found term_dict for:", term_name)
 					term_index = i # the loop index is the term index
 					if(int(term_dict["level"])):
 						term_level = int(term_dict["level"])
@@ -73,17 +73,17 @@ func process_json(json_data):
 						term_category_ranks = term_dict["categories"]
 					if(term_dict["relatedness"]):
 						term_term_ranks = term_dict["relatedness"]
-					print("Term details - level:", term_level, "Categories:", term_category_ranks, "Relatedness:", term_term_ranks)
+					# print("Term details - level:", term_level, "Categories:", term_category_ranks, "Relatedness:", term_term_ranks)
 				else:
 					# handle missing term data
 					print("Missing data for:", term_name)
 					continue
 
 				# Debugging output
-				print("Processing term:", term_name)
-				print("Level:", term_level)
-				print("Categories:", term_category_ranks)
-				print("Relatedness:", term_term_ranks)
+				#print("Processing term:", term_name)
+				#print("Level:", term_level)
+				#print("Categories:", term_category_ranks)
+				#print("Relatedness:", term_term_ranks)
 
 				if current_position.y + term_offset.y > screen_height:
 					# start a new column

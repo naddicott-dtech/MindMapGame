@@ -1,0 +1,36 @@
+{
+  "just_items": [
+    "Bacteria",
+    "Antibiotics"
+  ],
+  "categories": [
+    "Mechanisms of Evolution",
+    "Antibiotics and Resistance"
+  ],
+  "item_data": [
+    {
+      "name": "Bacteria",
+      "level": 1,
+      "categories": {
+        "Mechanisms of Evolution": 0.6,
+        "Antibiotics and Resistance": 1.0
+      },
+      "relatedness": {
+        "Bacteria": 1.0,
+        "Antibiotics": 0.9
+      }
+    },
+    {
+      "name": "Antibiotics",
+      "level": 2,
+      "categories": {
+        "Mechanisms of Evolution": 0.4,
+        "Antibiotics and Resistance": 1.0
+      },
+      "relatedness": {
+        "Bacteria": 0.9,
+        "Antibiotics": 1.0
+      }
+    }
+  ]
+}
