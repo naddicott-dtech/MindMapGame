@@ -1,0 +1,551 @@
+{
+  "just_items": [
+    "Gas exchange",
+    "Respiration",
+    "Oxygen",
+    "Carbon dioxide (CO2)",
+    "Homeostasis",
+    "Blood pH",
+    "Hemoglobin",
+    "Oxyhemoglobin",
+    "Partial pressure",
+    "Pressure gradient",
+    "Diffusion",
+    "Red blood cells",
+    "Affinity",
+    "Acidic",
+    "Basic",
+    "Alveoli",
+    "Capillaries",
+    "Cellular respiration"
+  ],
+  "categories": [
+    "Respiratory Processes and Mechanisms",
+    "Gas Transport and Exchange",
+    "Chemical and Physical Properties of Gases"
+  ],
+  "item_data": [
+    {
+      "name": "Gas exchange",
+      "level": 1,
+      "categories": {
+        "Respiratory Processes and Mechanisms": 1.0,
+        "Gas Transport and Exchange": 1.0,
+        "Chemical and Physical Properties of Gases": 0.8
+      },
+      "relatedness": {
+        "Gas exchange": 1.0,
+        "Respiration": 0.9,
+        "Oxygen": 0.9,
+        "Carbon dioxide (CO2)": 0.9,
+        "Homeostasis": 0.8,
+        "Blood pH": 0.7,
+        "Hemoglobin": 0.8,
+        "Oxyhemoglobin": 0.7,
+        "Partial pressure": 0.8,
+        "Pressure gradient": 0.7,
+        "Diffusion": 0.9,
+        "Red blood cells": 0.8,
+        "Affinity": 0.6,
+        "Acidic": 0.5,
+        "Basic": 0.5,
+        "Alveoli": 0.9,
+        "Capillaries": 0.8,
+        "Cellular respiration": 0.7
+      }
+    },
+    {
+	  "name": "Respiration",
+	  "level": 1,
+	  "categories": {
+		"Respiratory Processes and Mechanisms": 1.0,
+		"Gas Transport and Exchange": 0.9,
+		"Chemical and Physical Properties of Gases": 0.7
+	  },
+	  "relatedness": {
+		"Gas exchange": 0.9,
+		"Respiration": 1.0,
+		"Oxygen": 0.8,
+		"Carbon dioxide (CO2)": 0.8,
+		"Homeostasis": 0.8,
+		"Blood pH": 0.7,
+		"Hemoglobin": 0.7,
+		"Oxyhemoglobin": 0.6,
+		"Partial pressure": 0.7,
+		"Pressure gradient": 0.7,
+		"Diffusion": 0.8,
+		"Red blood cells": 0.7,
+		"Affinity": 0.6,
+		"Acidic": 0.5,
+		"Basic": 0.5,
+		"Alveoli": 0.8,
+		"Capillaries": 0.7,
+		"Cellular respiration": 0.9
+	  }
+	},
+	{
+	  "name": "Oxygen",
+	  "level": 2,
+	  "categories": {
+		"Respiratory Processes and Mechanisms": 0.9,
+		"Gas Transport and Exchange": 1.0,
+		"Chemical and Physical Properties of Gases": 0.9
+	  },
+	  "relatedness": {
+		"Gas exchange": 0.9,
+		"Respiration": 0.8,
+		"Oxygen": 1.0,
+		"Carbon dioxide (CO2)": 0.9,
+		"Homeostasis": 0.7,
+		"Blood pH": 0.6,
+		"Hemoglobin": 0.9,
+		"Oxyhemoglobin": 0.9,
+		"Partial pressure": 0.8,
+		"Pressure gradient": 0.7,
+		"Diffusion": 0.8,
+		"Red blood cells": 0.8,
+		"Affinity": 0.7,
+		"Acidic": 0.5,
+		"Basic": 0.5,
+		"Alveoli": 0.8,
+		"Capillaries": 0.7,
+		"Cellular respiration": 0.9
+	  }
+	},
+	{
+	  "name": "Carbon dioxide (CO2)",
+	  "level": 2,
+	  "categories": {
+		"Respiratory Processes and Mechanisms": 0.8,
+		"Gas Transport and Exchange": 1.0,
+		"Chemical and Physical Properties of Gases": 0.9
+	  },
+	  "relatedness": {
+		"Gas exchange": 0.9,
+		"Respiration": 0.9,
+		"Oxygen": 0.6,
+		"Carbon dioxide (CO2)": 1.0,
+		"Homeostasis": 0.8,
+		"Blood pH": 0.8,
+		"Hemoglobin": 0.8,
+		"Oxyhemoglobin": 0.7,
+		"Partial pressure": 0.8,
+		"Pressure gradient": 0.7,
+		"Diffusion": 0.9,
+		"Red blood cells": 0.8,
+		"Affinity": 0.7,
+		"Acidic": 0.9,
+		"Basic": 0.6,
+		"Alveoli": 0.8,
+		"Capillaries": 0.7,
+		"Cellular respiration": 0.9
+	  }
+	},
+	{
+	  "name": "Homeostasis",
+	  "level": 2,
+	  "categories": {
+		"Respiratory Processes and Mechanisms": 0.8,
+		"Gas Transport and Exchange": 0.7,
+		"Chemical and Physical Properties of Gases": 0.7
+	  },
+	  "relatedness": {
+		"Gas exchange": 0.8,
+		"Respiration": 0.8,
+		"Oxygen": 0.7,
+		"Carbon dioxide (CO2)": 0.8,
+		"Homeostasis": 1.0,
+		"Blood pH": 0.9,
+		"Hemoglobin": 0.7,
+		"Oxyhemoglobin": 0.6,
+		"Partial pressure": 0.7,
+		"Pressure gradient": 0.6,
+		"Diffusion": 0.6,
+		"Red blood cells": 0.7,
+		"Affinity": 0.5,
+		"Acidic": 0.7,
+		"Basic": 0.7,
+		"Alveoli": 0.6,
+		"Capillaries": 0.6,
+		"Cellular respiration": 0.8
+	  }
+	},
+	{
+	  "name": "Blood pH",
+	  "level": 2,
+	  "categories": {
+		"Respiratory Processes and Mechanisms": 0.7,
+		"Gas Transport and Exchange": 0.6,
+		"Chemical and Physical Properties of Gases": 1.0
+	  },
+	  "relatedness": {
+		"Gas exchange": 0.7,
+		"Respiration": 0.7,
+		"Oxygen": 0.6,
+		"Carbon dioxide (CO2)": 0.8,
+		"Homeostasis": 0.9,
+		"Blood pH": 1.0,
+		"Hemoglobin": 0.7,
+		"Oxyhemoglobin": 0.6,
+		"Partial pressure": 0.6,
+		"Pressure gradient": 0.5,
+		"Diffusion": 0.5,
+		"Red blood cells": 0.6,
+		"Affinity": 0.5,
+		"Acidic": 0.9,
+		"Basic": 0.9,
+		"Alveoli": 0.5,
+		"Capillaries": 0.5,
+		"Cellular respiration": 0.7
+	  }
+	},
+	{
+	  "name": "Hemoglobin",
+	  "level": 3,
+	  "categories": {
+		"Respiratory Processes and Mechanisms": 0.8,
+		"Gas Transport and Exchange": 1.0,
+		"Chemical and Physical Properties of Gases": 0.9
+	  },
+	  "relatedness": {
+		"Gas exchange": 0.8,
+		"Respiration": 0.7,
+		"Oxygen": 0.9,
+		"Carbon dioxide (CO2)": 0.8,
+		"Homeostasis": 0.7,
+		"Blood pH": 0.7,
+		"Hemoglobin": 1.0,
+		"Oxyhemoglobin": 0.9,
+		"Partial pressure": 0.8,
+		"Pressure gradient": 0.7,
+		"Diffusion": 0.7,
+		"Red blood cells": 0.9,
+		"Affinity": 0.8,
+		"Acidic": 0.6,
+		"Basic": 0.6,
+		"Alveoli": 0.7,
+		"Capillaries": 0.7,
+		"Cellular respiration": 0.8
+	  }
+	},
+	{
+	  "name": "Oxyhemoglobin",
+	  "level": 3,
+	  "categories": {
+		"Respiratory Processes and Mechanisms": 0.7,
+		"Gas Transport and Exchange": 0.9,
+		"Chemical and Physical Properties of Gases": 0.8
+	  },
+	  "relatedness": {
+		"Gas exchange": 0.7,
+		"Respiration": 0.6,
+		"Oxygen": 0.9,
+		"Carbon dioxide (CO2)": 0.7,
+		"Homeostasis": 0.6,
+		"Blood pH": 0.6,
+		"Hemoglobin": 0.9,
+		"Oxyhemoglobin": 1.0,
+		"Partial pressure": 0.8,
+		"Pressure gradient": 0.7,
+		"Diffusion": 0.8,
+		"Red blood cells": 0.8,
+		"Affinity": 0.7,
+		"Acidic": 0.5,
+		"Basic": 0.5,
+		"Alveoli": 0.7,
+		"Capillaries": 0.7,
+		"Cellular respiration": 0.8
+	  }
+	},
+	{
+	  "name": "Partial pressure",
+	  "level": 3,
+	  "categories": {
+		"Respiratory Processes and Mechanisms": 0.8,
+		"Gas Transport and Exchange": 1.0,
+		"Chemical and Physical Properties of Gases": 0.9
+	  },
+	  "relatedness": {
+		"Gas exchange": 0.8,
+		"Respiration": 0.7,
+		"Oxygen": 0.8,
+		"Carbon dioxide (CO2)": 0.8,
+		"Homeostasis": 0.7,
+		"Blood pH": 0.6,
+		"Hemoglobin": 0.8,
+		"Oxyhemoglobin": 0.8,
+		"Partial pressure": 1.0,
+		"Pressure gradient": 0.9,
+		"Diffusion": 0.9,
+		"Red blood cells": 0.7,
+		"Affinity": 0.6,
+		"Acidic": 0.6,
+		"Basic": 0.6,
+		"Alveoli": 0.8,
+		"Capillaries": 0.7,
+		"Cellular respiration": 0.8
+	  }
+	},
+	{
+	  "name": "Pressure gradient",
+	  "level": 3,
+	  "categories": {
+		"Respiratory Processes and Mechanisms": 0.7,
+		"Gas Transport and Exchange": 0.9,
+		"Chemical and Physical Properties of Gases": 0.8
+	  },
+	  "relatedness": {
+		"Gas exchange": 0.7,
+		"Respiration": 0.7,
+		"Oxygen": 0.7,
+		"Carbon dioxide (CO2)": 0.7,
+		"Homeostasis": 0.6,
+		"Blood pH": 0.5,
+		"Hemoglobin": 0.7,
+		"Oxyhemoglobin": 0.7,
+		"Partial pressure": 0.9,
+		"Pressure gradient": 1.0,
+		"Diffusion": 0.8,
+		"Red blood cells": 0.6,
+		"Affinity": 0.5,
+		"Acidic": 0.5,
+		"Basic": 0.5,
+		"Alveoli": 0.7,
+		"Capillaries": 0.6,
+		"Cellular respiration": 0.7
+	  }
+	},
+	{
+	  "name": "Diffusion",
+	  "level": 1,
+	  "categories": {
+		"Respiratory Processes and Mechanisms": 0.9,
+		"Gas Transport and Exchange": 0.9,
+		"Chemical and Physical Properties of Gases": 0.8
+	  },
+	  "relatedness": {
+		"Gas exchange": 0.9,
+		"Respiration": 0.8,
+		"Oxygen": 0.8,
+		"Carbon dioxide (CO2)": 0.9,
+		"Homeostasis": 0.6,
+		"Blood pH": 0.5,
+		"Hemoglobin": 0.7,
+		"Oxyhemoglobin": 0.8,
+		"Partial pressure": 0.9,
+		"Pressure gradient": 0.8,
+		"Diffusion": 1.0,
+		"Red blood cells": 0.7,
+		"Affinity": 0.6,
+		"Acidic": 0.4,
+		"Basic": 0.4,
+		"Alveoli": 0.8,
+		"Capillaries": 0.8,
+		"Cellular respiration": 0.7
+	  }
+	},
+	{
+	  "name": "Red blood cells",
+	  "level": 2,
+	  "categories": {
+		"Respiratory Processes and Mechanisms": 0.8,
+		"Gas Transport and Exchange": 1.0,
+		"Chemical and Physical Properties of Gases": 0.7
+	  },
+	  "relatedness": {
+		"Gas exchange": 0.8,
+		"Respiration": 0.7,
+		"Oxygen": 0.8,
+		"Carbon dioxide (CO2)": 0.8,
+		"Homeostasis": 0.7,
+		"Blood pH": 0.6,
+		"Hemoglobin": 0.9,
+		"Oxyhemoglobin": 0.8,
+		"Partial pressure": 0.7,
+		"Pressure gradient": 0.6,
+		"Diffusion": 0.7,
+		"Red blood cells": 1.0,
+		"Affinity": 0.7,
+		"Acidic": 0.5,
+		"Basic": 0.5,
+		"Alveoli": 0.8,
+		"Capillaries": 0.9,
+		"Cellular respiration": 0.8
+	  }
+	},
+	{
+	  "name": "Affinity",
+	  "level": 2,
+	  "categories": {
+		"Respiratory Processes and Mechanisms": 0.6,
+		"Gas Transport and Exchange": 0.7,
+		"Chemical and Physical Properties of Gases": 0.9
+	  },
+	  "relatedness": {
+		"Gas exchange": 0.6,
+		"Respiration": 0.6,
+		"Oxygen": 0.7,
+		"Carbon dioxide (CO2)": 0.7,
+		"Homeostasis": 0.5,
+		"Blood pH": 0.5,
+		"Hemoglobin": 0.8,
+		"Oxyhemoglobin": 0.7,
+		"Partial pressure": 0.6,
+		"Pressure gradient": 0.5,
+		"Diffusion": 0.6,
+		"Red blood cells": 0.7,
+		"Affinity": 1.0,
+		"Acidic": 0.6,
+		"Basic": 0.6,
+		"Alveoli": 0.5,
+		"Capillaries": 0.5,
+		"Cellular respiration": 0.6
+	  }
+	},
+	{
+	  "name": "Acidic",
+	  "level": 3,
+	  "categories": {
+		"Respiratory Processes and Mechanisms": 0.4,
+		"Gas Transport and Exchange": 0.5,
+		"Chemical and Physical Properties of Gases": 1.0
+	  },
+	  "relatedness": {
+		"Gas exchange": 0.5,
+		"Respiration": 0.5,
+		"Oxygen": 0.5,
+		"Carbon dioxide (CO2)": 0.6,
+		"Homeostasis": 0.7,
+		"Blood pH": 0.9,
+		"Hemoglobin": 0.6,
+		"Oxyhemoglobin": 0.5,
+		"Partial pressure": 0.6,
+		"Pressure gradient": 0.5,
+		"Diffusion": 0.4,
+		"Red blood cells": 0.5,
+		"Affinity": 0.6,
+		"Acidic": 1.0,
+		"Basic": 0.8,
+		"Alveoli": 0.4,
+		"Capillaries": 0.4,
+		"Cellular respiration": 0.6
+	  }
+	},
+	{
+	  "name": "Basic",
+	  "level": 3,
+	  "categories": {
+		"Respiratory Processes and Mechanisms": 0.4,
+		"Gas Transport and Exchange": 0.5,
+		"Chemical and Physical Properties of Gases": 1.0
+	  },
+	  "relatedness": {
+		"Gas exchange": 0.5,
+		"Respiration": 0.5,
+		"Oxygen": 0.5,
+		"Carbon dioxide (CO2)": 0.6,
+		"Homeostasis": 0.7,
+		"Blood pH": 0.9,
+		"Hemoglobin": 0.6,
+		"Oxyhemoglobin": 0.5,
+		"Partial pressure": 0.6,
+		"Pressure gradient": 0.5,
+		"Diffusion": 0.4,
+		"Red blood cells": 0.5,
+		"Affinity": 0.6,
+		"Acidic": 0.8,
+		"Basic": 1.0,
+		"Alveoli": 0.4,
+		"Capillaries": 0.4,
+		"Cellular respiration": 0.6
+	  }
+	},
+	{
+	  "name": "Alveoli",
+	  "level": 2,
+	  "categories": {
+		"Respiratory Processes and Mechanisms": 1.0,
+		"Gas Transport and Exchange": 0.9,
+		"Chemical and Physical Properties of Gases": 0.6
+	  },
+	  "relatedness": {
+		"Gas exchange": 0.9,
+		"Respiration": 0.8,
+		"Oxygen": 0.8,
+		"Carbon dioxide (CO2)": 0.8,
+		"Homeostasis": 0.6,
+		"Blood pH": 0.5,
+		"Hemoglobin": 0.7,
+		"Oxyhemoglobin": 0.7,
+		"Partial pressure": 0.8,
+		"Pressure gradient": 0.7,
+		"Diffusion": 0.8,
+		"Red blood cells": 0.8,
+		"Affinity": 0.5,
+		"Acidic": 0.4,
+		"Basic": 0.4,
+		"Alveoli": 1.0,
+		"Capillaries": 0.9,
+		"Cellular respiration": 0.7
+	  }
+	},
+	{
+	  "name": "Capillaries",
+	  "level": 2,
+	  "categories": {
+		"Respiratory Processes and Mechanisms": 0.9,
+		"Gas Transport and Exchange": 0.9,
+		"Chemical and Physical Properties of Gases": 0.6
+	  },
+	  "relatedness": {
+		"Gas exchange": 0.8,
+		"Respiration": 0.7,
+		"Oxygen": 0.7,
+		"Carbon dioxide (CO2)": 0.7,
+		"Homeostasis": 0.6,
+		"Blood pH": 0.5,
+		"Hemoglobin": 0.7,
+		"Oxyhemoglobin": 0.7,
+		"Partial pressure": 0.7,
+		"Pressure gradient": 0.6,
+		"Diffusion": 0.8,
+		"Red blood cells": 0.9,
+		"Affinity": 0.5,
+		"Acidic": 0.4,
+		"Basic": 0.4,
+		"Alveoli": 0.9,
+		"Capillaries": 1.0,
+		"Cellular respiration": 0.7
+	  }
+	},
+	{
+	  "name": "Cellular respiration",
+	  "level": 2,
+	  "categories": {
+		"Respiratory Processes and Mechanisms": 1.0,
+		"Gas Transport and Exchange": 0.8,
+		"Chemical and Physical Properties of Gases": 0.7
+	  },
+	  "relatedness": {
+		"Gas exchange": 0.7,
+		"Respiration": 0.9,
+		"Oxygen": 0.9,
+		"Carbon dioxide (CO2)": 0.9,
+		"Homeostasis": 0.8,
+		"Blood pH": 0.7,
+		"Hemoglobin": 0.8,
+		"Oxyhemoglobin": 0.8,
+		"Partial pressure": 0.8,
+		"Pressure gradient": 0.7,
+		"Diffusion": 0.7,
+		"Red blood cells": 0.8,
+		"Affinity": 0.6,
+		"Acidic": 0.6,
+		"Basic": 0.6,
+		"Alveoli": 0.7,
+		"Capillaries": 0.7,
+		"Cellular respiration": 1.0
+	  }
+	}
+  ]
+}
