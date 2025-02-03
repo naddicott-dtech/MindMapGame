@@ -1,6 +1,7 @@
 extends Node2D
 # the path to the JSON file
 #var json_path = "res://data/NeuronsData.json"
+@onready var move_tool_button = $UI/CenterContainer/VBoxContainer/HBoxContainer/MoveToolButton
 var json_path = "res://data/PopulationGenetics.json"
 var term_scene_path = "res://scenes/Term.tscn"
 var connector_line_scene_path = "res://scenes/ConnectorLine.tscn"
@@ -11,6 +12,12 @@ var line_in_progress = null
 var term_connections = {}
 var active_term = null
 @export var this_node: Node2D
+@export var TERM_OFFSET: Vector2 = Vector2(0, 60)
+@export var COLUMN_WIDTH: int = 150
+@export var PENALTY_LOW_RELATEDNESS: float = 0.75
+@export var HIGH_RELATEDNESS_BONUS: float = 1.5
+@export var HIGH_RELATEDNESS_VALUE: float = 0.9
+@export var BASE_SCORE: int = 10
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -18,7 +25,7 @@ func _ready():
 	var json_data = load_and_parse_json()
 	if json_data != null:
 		process_json(json_data)
-	var move_tool_button = get_node("UI/CenterContainer/VBoxContainer/HBoxContainer/MoveToolButton")
+	#var move_tool_button = get_node("UI/CenterContainer/VBoxContainer/HBoxContainer/MoveToolButton")
 	move_tool_button.grab_focus() # this makes the 'Move Tool" button the focused button
 	# instantiate_term("Example Term", Vector2(200,200))
 
@@ -43,8 +50,8 @@ func load_and_parse_json():
 # Placeholder function to do something with parsed data
 func process_json(json_data):
 	var current_position = Vector2(50, 50)
-	var term_offset = Vector2(0, 60)
-	var column_width = 150 # width of each term
+	# var term_offset = Vector2(0, 60)
+	# var column_width = 150 # width of each term
 	var screen_height = DisplayServer.screen_get_size().y # get the window height
 	var term_index = 0
 	var term_level = 0
@@ -80,17 +87,11 @@ func process_json(json_data):
 					print("Missing data for:", term_name)
 					continue
 
-				# Debugging output
-				#print("Processing term:", term_name)
-				#print("Level:", term_level)
-				#print("Categories:", term_category_ranks)
-				#print("Relatedness:", term_term_ranks)
-
-				if current_position.y + term_offset.y > screen_height:
+				if current_position.y + TERM_OFFSET.y > screen_height:
 					# start a new column
-					current_position.y = term_offset.y
-					current_position.x += column_width
-				current_position += term_offset # staggered position
+					current_position.y = TERM_OFFSET.y
+					current_position.x += COLUMN_WIDTH
+				current_position += TERM_OFFSET # staggered position
 				instantiate_term(term_name, current_position, term_index, term_level, term_category_ranks, term_term_ranks)
 				term_connections[i] = {"start_lines": [], "end_lines": []}
 
@@ -129,6 +130,48 @@ func instantiate_connector_line() -> MyConnectorLine:
 func _process(delta):
 	pass
 
+func start_connector_line(clicked_term: Node2D) -> void:
+		first_clicked_term = clicked_term
+		line_in_progress = instantiate_connector_line()
+		# Attach the line to the first clicked term.
+		first_clicked_term.add_child(line_in_progress)
+		# Set up the connector line with the first term's index and a placeholder for the second
+		line_in_progress.setup_connector(first_clicked_term.term_index, -1)
+		line_in_progress.width = 2
+		line_in_progress.z_index = 0
+		# Initialize both points to the current local mouse position
+		var local_pos = first_clicked_term.get_local_mouse_position()
+		line_in_progress.add_point(local_pos)
+		line_in_progress.add_point(local_pos)
+
+func finish_conector_line(second_clicked_term: Node2D) -> void:
+		#ensure we don't connect a term to itself
+		if second_clicked_term == first_clicked_term:
+			return
+		
+		var connection_exists = false
+		# Check if a connection already exists between these two terms
+		for line in term_connections[first_clicked_term.term_index]["start_lines"]:
+			if line.end_term_index == second_clicked_term.term_index:
+				connection_exists = true
+				# Cancel the current line
+				first_clicked_term.remove_child(line_in_progress)
+				line_in_progress.queue_free()
+				line_in_progress = null
+				first_clicked_term = null
+				break
+		if not connection_exists:
+			# set endpoint based on the second term's global position relative to the first.
+			line_in_progress.set_point_position(1, second_clicked_term.global_position - first_clicked_term.get_global_position())
+			line_in_progress.setup_connector(first_clicked_term.term_index, second_clicked_term.term_index)
+			# Update the connections dictionary
+			term_connections[first_clicked_term.term_index]["start_lines"].append(line_in_progress)
+			term_connections[second_clicked_term.term_index]["end_lines"].append(line_in_progress)
+			update_line_positions(line_in_progress, first_clicked_term, second_clicked_term)
+			# reset the temporary state
+			first_clicked_term = null
+			line_in_progress = null
+
 func _input(event):
 	if current_tool == Tools.MOVE:
 		pass # done in script for items
@@ -140,46 +183,9 @@ func _input(event):
 			if clicked_term != null:
 				if not first_clicked_term:
 					#this is first click, start the line
-					first_clicked_term = clicked_term
-					line_in_progress = instantiate_connector_line()
-					first_clicked_term.add_child(line_in_progress)
-					line_in_progress.setup_connector(first_clicked_term.term_index, -1)
-					line_in_progress.width = 2 # set the width
-					line_in_progress.z_index = 0 # behind the terms
-					line_in_progress.add_point(first_clicked_term.get_local_mouse_position())
-					line_in_progress.add_point(first_clicked_term.get_local_mouse_position())
+					start_connector_line(clicked_term)
 				else: #second click, finish line
-					var second_clicked_term = clicked_term
-					if second_clicked_term != first_clicked_term:
-						#check if a connection already exists between the two terms
-						var connection_exists = false
-						for line in term_connections[first_clicked_term.term_index]["start_lines"]:
-							if line.end_term_index == second_clicked_term.term_index:
-								connection_exists = true
-								# cancel the line, putting the user back to first click
-								first_clicked_term.remove_child(line_in_progress)
-								line_in_progress.queue_free()
-								line_in_progress = null
-								first_clicked_term = null
-								break
-						if not connection_exists:
-							line_in_progress.set_point_position(1, second_clicked_term.global_position - first_clicked_term.get_global_position())
-							line_in_progress.setup_connector(first_clicked_term.term_index, second_clicked_term.term_index)
-							#update global connections
-							term_connections[first_clicked_term.term_index]["start_lines"].append(line_in_progress)
-							term_connections[second_clicked_term.term_index]["end_lines"].append(line_in_progress)
-							update_line_positions(line_in_progress, first_clicked_term, second_clicked_term)
-							# set up signaling for dragging around
-							# set up updating dictionary / list of connections
-							#reset for next connection
-							first_clicked_term = null
-							line_in_progress = null
-			elif first_clicked_term and line_in_progress:
-				# we didn't click a term
-				first_clicked_term.remove_child(line_in_progress)
-				line_in_progress.queue_free()
-				line_in_progress = null
-				first_clicked_term = null
+					finish_conector_line(clicked_term)
 		else: #input was not a mouse button
 			#handle movement mid-line creation
 			if first_clicked_term and line_in_progress:
@@ -215,18 +221,18 @@ func update_lines_for_term(changed_term):
 			line.z_index = 0
 		
 func calculate_score():
-	var base_score = 10
+	#var base_score = 10
 	var total_connections = 0
 	var terms_count = term_connections.size()
-	var penalty_for_low_relatedness = 0.75 # penalty for low relatedness
-	var high_relatedness_bonus = 1.5 # bonus multiplier for high relatedness connections
+	#var penalty_for_low_relatedness = 0.75 # penalty for low relatedness
+	#var high_relatedness_bonus = 1.5 # bonus multiplier for high relatedness connections
 	var high_relatedness_value = 0.9
-	var base_score_per_high_relatedness_connection = high_relatedness_value * 10 * high_relatedness_bonus
+	var base_score_per_high_relatedness_connection = high_relatedness_value * 10 * HIGH_RELATEDNESS_BONUS
 	
 	# OLD Hypothetical very high score calculation (for normalizing later)
 	#var hypothetical_max_connections = terms_count # assuming one high quality connection per term
 	#var a_very_high_score = base_score + hypothetical_max_connections * base_score_per_high_relatedness_connection
-	var a_very_high_score = base_score
+	var a_very_high_score = BASE_SCORE
 	for term_index in term_connections:
 		var term_instance = get_term_instance_by_index(term_index)
 		var max_relatedness = 0.0
@@ -240,34 +246,35 @@ func calculate_score():
 		
 		#add the contribution of the most related term to the very high score
 		if max_relatedness > high_relatedness_value: # if relatedness qualifies as high
-			a_very_high_score += max_relatedness * 10 * high_relatedness_bonus
+			a_very_high_score += max_relatedness * 10 * HIGH_RELATEDNESS_BONUS
 		else:
 			#apply a default contribution if not high relatedness connection is found
 			a_very_high_score += max_relatedness * 5 #assuming max was better than 0.3
 	# The a_very_high_score now reflects the sume of the base score and all the best possible single connections
 	
-	# Calculate base score from connections
+	var current_score = BASE_SCORE
+	# Calculate current score from connections
 	for term_index in term_connections:
 		var term_data = term_connections[term_index]
 		for connection in term_data["start_lines"]:
 			var end_term_index = connection.get_connected_term_index()
 			var relatedness = get_relatedness(term_index, end_term_index)
 			if relatedness > 0.8: # considered high relatedness
-				base_score += relatedness * 10 * high_relatedness_bonus
+				current_score += relatedness * 10 * HIGH_RELATEDNESS_BONUS
 			elif relatedness < 0.3: # considered low relatedness
-				base_score -= (1 - relatedness) * 10 * penalty_for_low_relatedness
+				current_score -= (1 - relatedness) * 10 * PENALTY_LOW_RELATEDNESS
 			else:
-				base_score += relatedness * 5
+				current_score += relatedness * 5
 			
 			# Extra credit for heiarchal (sp?) level connections
 			var origin_level = get_level(term_index)
 			var end_level = get_level(end_term_index)
 			if origin_level == 1 and end_level == 2: #top level to mid level
-				base_score +=5 #extra credit for 1->2 connection
+				current_score +=5 #extra credit for 1->2 connection
 			elif origin_level == 2 and end_level == 3:
-				base_score +=2 #extra credit for 2->3 connection
+				current_score +=2 #extra credit for 2->3 connection
 			elif origin_level == 3 and end_level == 4:
-				base_score +=2 #extra credit for 3->4
+				current_score +=2 #extra credit for 3->4
 			
 			total_connections += 1
 	# Calculate complexity penalty
@@ -277,7 +284,7 @@ func calculate_score():
 		var excess_connections = total_connections - penalty_threshold
 		complexity_penalty_multiplier = max(0.1, 1 - excess_connections / (terms_count * 1.1))
 		
-	var final_score = base_score * complexity_penalty_multiplier
+	var final_score = current_score * complexity_penalty_multiplier
 	# final_score = round(final_score * 10) / 10  # Rounds to one decimal place
 	print("final score: ", final_score)
 	print("a very high score: ", a_very_high_score)

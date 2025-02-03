@@ -74,7 +74,7 @@ func set_tool_mode(new_mode: String):
 	elif new_mode == "connect":
 		current_tool = Tools.CONNECT	
 	elif new_mode == "disconnect":
-		current_tool == Tools.DISCONNECT
+		current_tool = Tools.DISCONNECT
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
