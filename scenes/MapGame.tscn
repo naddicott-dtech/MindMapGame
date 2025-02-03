@@ -5,8 +5,9 @@
 [ext_resource type="FontFile" uid="uid://16q41s3wy1sc" path="res://Arial_Bold.ttf" id="3_q2bbl"]
 [ext_resource type="Script" path="res://scripts/MyRichTextLabel.gd" id="4_ekgkf"]
 
-[node name="MapGame" type="Node2D"]
+[node name="MapGame" type="Node2D" node_paths=PackedStringArray("this_node")]
 script = ExtResource("1_wdwfk")
+this_node = NodePath(".")
 
 [node name="Background" type="ColorRect" parent="."]
 anchors_preset = 15

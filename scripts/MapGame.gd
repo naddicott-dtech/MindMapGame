@@ -1,7 +1,7 @@
 extends Node2D
 # the path to the JSON file
 #var json_path = "res://data/NeuronsData.json"
-var json_path = "res://data/Metabolism.json"
+var json_path = "res://data/PopulationGenetics.json"
 var term_scene_path = "res://scenes/Term.tscn"
 var connector_line_scene_path = "res://scenes/ConnectorLine.tscn"
 enum Tools {MOVE, CONNECT, DISCONNECT}
@@ -10,6 +10,7 @@ var first_clicked_term = null
 var line_in_progress = null
 var term_connections = {}
 var active_term = null
+@export var this_node: Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -111,7 +112,17 @@ func instantiate_term(term_name: String, my_position: Vector2, index: int, level
 func instantiate_connector_line() -> MyConnectorLine:
 	var connector_line_scene = preload("res://scenes/ConnectorLine.tscn")
 	var connector_line = connector_line_scene.instantiate() as MyConnectorLine
-	# set up connector line with additional properties if necessary
+	
+	# Create the connector controller and add it to the line
+	var controller_scene = preload("res://scenes/ConnectorController.tscn")
+	var controller_instance = controller_scene.instantiate()
+	connector_line.add_child(controller_instance)
+	controller_instance.name = "ConnectorController"
+	controller_instance.position = ((connector_line.get_point_position(0) + connector_line.get_point_position(1)) * 0.5)
+	controller_instance.parent_line = connector_line  # Set reference to the line
+	controller_instance.map_game = self               # Pass the reference to MapGame
+	# add the controller to a group for easy access
+	controller_instance.add_to_group("connector_controllers")
 	return connector_line
 	
 
@@ -179,8 +190,13 @@ func _input(event):
 		# disconnect logic
 		if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
 			var clicked_term = get_clicked_term(event.position)
+			var clicked_controller = get_clicked_line_controller(event.position)
 			if clicked_term != null:
 				disconnect_term(clicked_term)
+			elif clicked_controller != null:
+				remove_single_line(clicked_controller)
+			else:
+				pass
 
 func update_lines_for_term(changed_term):
 	# move start and end points of lines where this term is the start
@@ -250,6 +266,8 @@ func calculate_score():
 				base_score +=5 #extra credit for 1->2 connection
 			elif origin_level == 2 and end_level == 3:
 				base_score +=2 #extra credit for 2->3 connection
+			elif origin_level == 3 and end_level == 4:
+				base_score +=2 #extra credit for 3->4
 			
 			total_connections += 1
 	# Calculate complexity penalty
@@ -316,6 +334,12 @@ func get_clicked_term(click_position) -> Node2D:
 		if term.get_global_rect().has_point(click_position):
 			# print(term.name)
 			return term
+	return null
+
+func get_clicked_line_controller(click_position) -> Area2D:
+	for controller in get_tree().get_nodes_in_group("connector_controllers"):
+		if controller.get_global_rect().has_point(click_position):
+			return controller
 	return null
 
 func _on_calculate_score_button_pressed():
@@ -416,3 +440,24 @@ func update_line_positions(line, start_node, end_node):
 	if line.get_parent():
 		line.points[0] = best_start_point
 		line.points[1] = best_end_point
+		
+		# Update the position of the connector controller
+		if line.has_node("ConnectorController"):
+			var controller = line.get_node("ConnectorController")
+			controller.position = (best_start_point + best_end_point) / 2
+
+func remove_single_line(controller):
+	var line = controller.parent_line
+	var origin_term_index = line.origin_term_index
+	var end_term_index = line.end_term_index
+
+	# Remove from start_lines of origin term
+	if line in term_connections[origin_term_index]["start_lines"]:
+		term_connections[origin_term_index]["start_lines"].erase(line)
+	# Remove from end_lines of end term
+	if line in term_connections[end_term_index]["end_lines"]:
+		term_connections[end_term_index]["end_lines"].erase(line)
+	
+	# Remove the line node
+	if is_instance_valid(line):
+		line.queue_free()

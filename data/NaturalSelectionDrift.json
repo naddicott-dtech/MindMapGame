@@ -1,448 +1,448 @@
 {
   "just_items": [
-    "Bacteria",
-    "Antibiotic resistance",
-    "Natural selection",
-    "Alleles",
-    "Fitness",
-    "Mutations",
-    "Variation",
-    "Predators",
-    "Survival",
-    "Reproduction",
-    "Genetic drift",
-    "Bottleneck effect",
-    "Founder effect",
-    "Evolution",
-    "Population size"
+	"Bacteria",
+	"Antibiotic resistance",
+	"Natural selection",
+	"Alleles",
+	"Fitness",
+	"Mutations",
+	"Variation",
+	"Predators",
+	"Survival",
+	"Reproduction",
+	"Genetic drift",
+	"Bottleneck effect",
+	"Founder effect",
+	"Evolution",
+	"Population size"
   ],
   "categories": [
-    "Mechanisms of Evolution",
-    "Antibiotics and Resistance",
-    "Fitness and Survival",
-    "Variation and Traits",
-    "Population Dynamics"
+	"Mechanisms of Evolution",
+	"Antibiotics and Resistance",
+	"Fitness and Survival",
+	"Variation and Traits",
+	"Population Dynamics"
   ],
   "item_data": [
-    {
-      "name": "Bacteria",
-      "level": 1,
-      "categories": {
-        "Mechanisms of Evolution": 0.6,
-        "Antibiotics and Resistance": 1.0,
-        "Fitness and Survival": 0.7,
-        "Variation and Traits": 0.8,
-        "Population Dynamics": 0.5
-      },
-      "relatedness": {
-        "Bacteria": 1.0,
-        "Antibiotic resistance": 0.9,
-        "Natural selection": 0.7,
-        "Alleles": 0.5,
-        "Fitness": 0.6,
-        "Mutations": 0.8,
-        "Variation": 0.8,
-        "Predators": 0.4,
-        "Survival": 0.6,
-        "Reproduction": 0.5,
-        "Genetic drift": 0.4,
-        "Bottleneck effect": 0.3,
-        "Founder effect": 0.3,
-        "Evolution": 0.7,
-        "Population size": 0.5
-      }
-    },
-    {
-      "name": "Antibiotic resistance",
-      "level": 2,
-      "categories": {
-        "Mechanisms of Evolution": 0.6,
-        "Antibiotics and Resistance": 1.0,
-        "Fitness and Survival": 0.7,
-        "Variation and Traits": 0.6,
-        "Population Dynamics": 0.5
-      },
-      "relatedness": {
-        "Bacteria": 0.9,
-        "Antibiotic resistance": 1.0,
-        "Natural selection": 0.7,
-        "Alleles": 0.5,
-        "Fitness": 0.6,
-        "Mutations": 0.7,
-        "Variation": 0.7,
-        "Predators": 0.3,
-        "Survival": 0.6,
-        "Reproduction": 0.5,
-        "Genetic drift": 0.3,
-        "Bottleneck effect": 0.2,
-        "Founder effect": 0.2,
-        "Evolution": 0.7,
-        "Population size": 0.4
-      }
-    },
-    {
-      "name": "Natural selection",
-      "level": 1,
-      "categories": {
-        "Mechanisms of Evolution": 1.0,
-        "Antibiotics and Resistance": 0.6,
-        "Fitness and Survival": 0.8,
-        "Variation and Traits": 0.9,
-        "Population Dynamics": 0.7
-      },
-      "relatedness": {
-        "Bacteria": 0.7,
-        "Antibiotic resistance": 0.7,
-        "Natural selection": 1.0,
-        "Alleles": 0.8,
-        "Fitness": 0.9,
-        "Mutations": 0.8,
-        "Variation": 0.9,
-        "Predators": 0.7,
-        "Survival": 0.8,
-        "Reproduction": 0.8,
-        "Genetic drift": 0.6,
-        "Bottleneck effect": 0.5,
-        "Founder effect": 0.5,
-        "Evolution": 1.0,
-        "Population size": 0.7
-      }
-    },
-    {
-      "name": "Alleles",
-      "level": 2,
-      "categories": {
-        "Mechanisms of Evolution": 0.8,
-        "Antibiotics and Resistance": 0.5,
-        "Fitness and Survival": 0.7,
-        "Variation and Traits": 1.0,
-        "Population Dynamics": 0.6
-      },
-      "relatedness": {
-        "Bacteria": 0.5,
-        "Antibiotic resistance": 0.5,
-        "Natural selection": 0.8,
-        "Alleles": 1.0,
-        "Fitness": 0.7,
-        "Mutations": 0.9,
-        "Variation": 0.8,
-        "Predators": 0.4,
-        "Survival": 0.6,
-        "Reproduction": 0.7,
-        "Genetic drift": 0.5,
-        "Bottleneck effect": 0.4,
-        "Founder effect": 0.4,
-        "Evolution": 0.8,
-        "Population size": 0.5
-      }
-    },
-    {
-      "name": "Fitness",
-      "level": 1,
-      "categories": {
-        "Mechanisms of Evolution": 0.8,
-        "Antibiotics and Resistance": 0.6,
-        "Fitness and Survival": 1.0,
-        "Variation and Traits": 0.7,
-        "Population Dynamics": 0.7
-      },
-      "relatedness": {
-        "Bacteria": 0.6,
-        "Antibiotic resistance": 0.6,
-        "Natural selection": 0.9,
-        "Alleles": 0.7,
-        "Fitness": 1.0,
-        "Mutations": 0.7,
-        "Variation": 0.8,
-        "Predators": 0.5,
-        "Survival": 0.9,
-        "Reproduction": 0.9,
-        "Genetic drift": 0.5,
-        "Bottleneck effect": 0.4,
-        "Founder effect": 0.4,
-        "Evolution": 0.9,
-        "Population size": 0.6
-      }
-    },
-    {
-      "name": "Mutations",
-      "level": 2,
-      "categories": {
-        "Mechanisms of Evolution": 0.9,
-        "Antibiotics and Resistance": 0.7,
-        "Fitness and Survival": 0.8,
-        "Variation and Traits": 1.0,
-        "Population Dynamics": 0.6
-      },
-      "relatedness": {
-        "Bacteria": 0.8,
-        "Antibiotic resistance": 0.7,
-        "Natural selection": 0.8,
-        "Alleles": 0.9,
-        "Fitness": 0.7,
-        "Mutations": 1.0,
-        "Variation": 0.9,
-        "Predators": 0.5,
-        "Survival": 0.7,
-        "Reproduction": 0.6,
-        "Genetic drift": 0.5,
-        "Bottleneck effect": 0.4,
-        "Founder effect": 0.4,
-        "Evolution": 0.8,
-        "Population size": 0.5
-      }
-    },
-    {
-      "name": "Variation",
-      "level": 2,
-      "categories": {
-        "Mechanisms of Evolution": 0.9,
-        "Antibiotics and Resistance": 0.5,
-        "Fitness and Survival": 0.8,
-        "Variation and Traits": 1.0,
-        "Population Dynamics": 0.7
-      },
-      "relatedness": {
-        "Bacteria": 0.8,
-        "Antibiotic resistance": 0.7,
-        "Natural selection": 0.9,
-        "Alleles": 0.8,
-        "Fitness": 0.8,
-        "Mutations": 0.9,
-        "Variation": 1.0,
-        "Predators": 0.6,
-        "Survival": 0.8,
-        "Reproduction": 0.7,
-        "Genetic drift": 0.6,
-        "Bottleneck effect": 0.5,
-        "Founder effect": 0.5,
-        "Evolution": 0.9,
-        "Population size": 0.6
-      }
-    },
-    {
-      "name": "Predators",
-      "level": 3,
-      "categories": {
-        "Mechanisms of Evolution": 0.6,
-        "Antibiotics and Resistance": 0.2,
-        "Fitness and Survival": 0.7,
-        "Variation and Traits": 0.8,
-        "Population Dynamics": 0.5
-      },
-      "relatedness": {
-        "Bacteria": 0.4,
-        "Antibiotic resistance": 0.3,
-        "Natural selection": 0.7,
-        "Alleles": 0.4,
-        "Fitness": 0.5,
-        "Mutations": 0.5,
-        "Variation": 0.6,
-        "Predators": 1.0,
-        "Survival": 0.8,
-        "Reproduction": 0.5,
-        "Genetic drift": 0.4,
-        "Bottleneck effect": 0.3,
-        "Founder effect": 0.3,
-        "Evolution": 0.6,
-        "Population size": 0.4
-      }
-    },
-    {
-      "name": "Survival",
-      "level": 1,
-      "categories": {
-        "Mechanisms of Evolution": 0.8,
-        "Antibiotics and Resistance": 0.6,
-        "Fitness and Survival": 1.0,
-        "Variation and Traits": 0.7,
-        "Population Dynamics": 0.7
-      },
-      "relatedness": {
-        "Bacteria": 0.6,
-        "Antibiotic resistance": 0.6,
-        "Natural selection": 0.8,
-        "Alleles": 0.6,
-        "Fitness": 0.9,
-        "Mutations": 0.7,
-        "Variation": 0.8,
-        "Predators": 0.8,
-        "Survival": 1.0,
-        "Reproduction": 0.9,
-        "Genetic drift": 0.5,
-        "Bottleneck effect": 0.4,
-        "Founder effect": 0.4,
-        "Evolution": 0.8,
-        "Population size": 0.6
-      }
-    },
-    {
-      "name": "Reproduction",
-      "level": 2,
-      "categories": {
-        "Mechanisms of Evolution": 0.7,
-        "Antibiotics and Resistance": 0.5,
-        "Fitness and Survival": 0.9,
-        "Variation and Traits": 0.7,
-        "Population Dynamics": 0.8
-      },
-      "relatedness": {
-        "Bacteria": 0.5,
-        "Antibiotic resistance": 0.5,
-        "Natural selection": 0.8,
-        "Alleles": 0.7,
-        "Fitness": 0.9,
-        "Mutations": 0.6,
-        "Variation": 0.7,
-        "Predators": 0.5,
-        "Survival": 0.9,
-        "Reproduction": 1.0,
-        "Genetic drift": 0.4,
-        "Bottleneck effect": 0.3,
-        "Founder effect": 0.3,
-        "Evolution": 0.8,
-        "Population size": 0.6
-      }
-    },
-    {
-      "name": "Genetic drift",
-      "level": 1,
-      "categories": {
-        "Mechanisms of Evolution": 1.0,
-        "Antibiotics and Resistance": 0.3,
-        "Fitness and Survival": 0.6,
-        "Variation and Traits": 0.7,
-        "Population Dynamics": 0.8
-      },
-      "relatedness": {
-        "Bacteria": 0.4,
-        "Antibiotic resistance": 0.3,
-        "Natural selection": 0.6,
-        "Alleles": 0.5,
-        "Fitness": 0.5,
-        "Mutations": 0.5,
-        "Variation": 0.6,
-        "Predators": 0.4,
-        "Survival": 0.5,
-        "Reproduction": 0.4,
-        "Genetic drift": 1.0,
-        "Bottleneck effect": 0.8,
-        "Founder effect": 0.8,
-        "Evolution": 0.7,
-        "Population size": 0.7
-      }
-    },
-    {
-      "name": "Bottleneck effect",
-      "level": 2,
-      "categories": {
-        "Mechanisms of Evolution": 0.9,
-        "Antibiotics and Resistance": 0.2,
-        "Fitness and Survival": 0.5,
-        "Variation and Traits": 0.6,
-        "Population Dynamics": 0.8
-      },
-      "relatedness": {
-        "Bacteria": 0.3,
-        "Antibiotic resistance": 0.2,
-        "Natural selection": 0.5,
-        "Alleles": 0.4,
-        "Fitness": 0.4,
-        "Mutations": 0.4,
-        "Variation": 0.5,
-        "Predators": 0.3,
-        "Survival": 0.4,
-        "Reproduction": 0.3,
-        "Genetic drift": 0.8,
-        "Bottleneck effect": 1.0,
-        "Founder effect": 0.7,
-        "Evolution": 0.6,
-        "Population size": 0.8
-      }
-    },
-    {
-      "name": "Founder effect",
-      "level": 2,
-      "categories": {
-        "Mechanisms of Evolution": 0.9,
-        "Antibiotics and Resistance": 0.2,
-        "Fitness and Survival": 0.5,
-        "Variation and Traits": 0.6,
-        "Population Dynamics": 0.8
-      },
-      "relatedness": {
-        "Bacteria": 0.3,
-        "Antibiotic resistance": 0.2,
-        "Natural selection": 0.5,
-        "Alleles": 0.4,
-        "Fitness": 0.4,
-        "Mutations": 0.4,
-        "Variation": 0.5,
-        "Predators": 0.3,
-        "Survival": 0.4,
-        "Reproduction": 0.3,
-        "Genetic drift": 0.8,
-        "Bottleneck effect": 0.7,
-        "Founder effect": 1.0,
-        "Evolution": 0.6,
-        "Population size": 0.8
-      }
-    },
-    {
-      "name": "Evolution",
-      "level": 1,
-      "categories": {
-        "Mechanisms of Evolution": 1.0,
-        "Antibiotics and Resistance": 0.5,
-        "Fitness and Survival": 0.8,
-        "Variation and Traits": 0.9,
-        "Population Dynamics": 0.8
-      },
-      "relatedness": {
-        "Bacteria": 0.7,
-        "Antibiotic resistance": 0.7,
-        "Natural selection": 1.0,
-        "Alleles": 0.8,
-        "Fitness": 0.9,
-        "Mutations": 0.8,
-        "Variation": 0.9,
-        "Predators": 0.6,
-        "Survival": 0.8,
-        "Reproduction": 0.8,
-        "Genetic drift": 0.7,
-        "Bottleneck effect": 0.6,
-        "Founder effect": 0.6,
-        "Evolution": 1.0,
-        "Population size": 0.7
-      }
-    },
-    {
-      "name": "Population size",
-      "level": 2,
-      "categories": {
-        "Mechanisms of Evolution": 0.7,
-        "Antibiotics and Resistance": 0.3,
-        "Fitness and Survival": 0.6,
-        "Variation and Traits": 0.7,
-        "Population Dynamics": 1.0
-      },
-      "relatedness": {
-        "Bacteria": 0.5,
-        "Antibiotic resistance": 0.4,
-        "Natural selection": 0.7,
-        "Alleles": 0.5,
-        "Fitness": 0.6,
-        "Mutations": 0.5,
-        "Variation": 0.6,
-        "Predators": 0.4,
-        "Survival": 0.6,
-        "Reproduction": 0.6,
-        "Genetic drift": 0.7,
-        "Bottleneck effect": 0.8,
-        "Founder effect": 0.8,
-        "Evolution": 0.7,
-        "Population size": 1.0
-      }
-    }
+	{
+	  "name": "Bacteria",
+	  "level": 1,
+	  "categories": {
+		"Mechanisms of Evolution": 0.6,
+		"Antibiotics and Resistance": 1.0,
+		"Fitness and Survival": 0.7,
+		"Variation and Traits": 0.8,
+		"Population Dynamics": 0.5
+	  },
+	  "relatedness": {
+		"Bacteria": 1.0,
+		"Antibiotic resistance": 0.9,
+		"Natural selection": 0.7,
+		"Alleles": 0.5,
+		"Fitness": 0.6,
+		"Mutations": 0.8,
+		"Variation": 0.8,
+		"Predators": 0.4,
+		"Survival": 0.6,
+		"Reproduction": 0.5,
+		"Genetic drift": 0.4,
+		"Bottleneck effect": 0.3,
+		"Founder effect": 0.3,
+		"Evolution": 0.7,
+		"Population size": 0.5
+	  }
+	},
+	{
+	  "name": "Antibiotic resistance",
+	  "level": 2,
+	  "categories": {
+		"Mechanisms of Evolution": 0.6,
+		"Antibiotics and Resistance": 1.0,
+		"Fitness and Survival": 0.7,
+		"Variation and Traits": 0.6,
+		"Population Dynamics": 0.5
+	  },
+	  "relatedness": {
+		"Bacteria": 0.9,
+		"Antibiotic resistance": 1.0,
+		"Natural selection": 0.7,
+		"Alleles": 0.5,
+		"Fitness": 0.6,
+		"Mutations": 0.7,
+		"Variation": 0.7,
+		"Predators": 0.3,
+		"Survival": 0.6,
+		"Reproduction": 0.5,
+		"Genetic drift": 0.3,
+		"Bottleneck effect": 0.2,
+		"Founder effect": 0.2,
+		"Evolution": 0.7,
+		"Population size": 0.4
+	  }
+	},
+	{
+	  "name": "Natural selection",
+	  "level": 1,
+	  "categories": {
+		"Mechanisms of Evolution": 1.0,
+		"Antibiotics and Resistance": 0.6,
+		"Fitness and Survival": 0.8,
+		"Variation and Traits": 0.9,
+		"Population Dynamics": 0.7
+	  },
+	  "relatedness": {
+		"Bacteria": 0.7,
+		"Antibiotic resistance": 0.7,
+		"Natural selection": 1.0,
+		"Alleles": 0.8,
+		"Fitness": 0.9,
+		"Mutations": 0.8,
+		"Variation": 0.9,
+		"Predators": 0.7,
+		"Survival": 0.8,
+		"Reproduction": 0.8,
+		"Genetic drift": 0.6,
+		"Bottleneck effect": 0.5,
+		"Founder effect": 0.5,
+		"Evolution": 1.0,
+		"Population size": 0.7
+	  }
+	},
+	{
+	  "name": "Alleles",
+	  "level": 2,
+	  "categories": {
+		"Mechanisms of Evolution": 0.8,
+		"Antibiotics and Resistance": 0.5,
+		"Fitness and Survival": 0.7,
+		"Variation and Traits": 1.0,
+		"Population Dynamics": 0.6
+	  },
+	  "relatedness": {
+		"Bacteria": 0.5,
+		"Antibiotic resistance": 0.5,
+		"Natural selection": 0.8,
+		"Alleles": 1.0,
+		"Fitness": 0.7,
+		"Mutations": 0.9,
+		"Variation": 0.8,
+		"Predators": 0.4,
+		"Survival": 0.6,
+		"Reproduction": 0.7,
+		"Genetic drift": 0.5,
+		"Bottleneck effect": 0.4,
+		"Founder effect": 0.4,
+		"Evolution": 0.8,
+		"Population size": 0.5
+	  }
+	},
+	{
+	  "name": "Fitness",
+	  "level": 1,
+	  "categories": {
+		"Mechanisms of Evolution": 0.8,
+		"Antibiotics and Resistance": 0.6,
+		"Fitness and Survival": 1.0,
+		"Variation and Traits": 0.7,
+		"Population Dynamics": 0.7
+	  },
+	  "relatedness": {
+		"Bacteria": 0.6,
+		"Antibiotic resistance": 0.6,
+		"Natural selection": 0.9,
+		"Alleles": 0.7,
+		"Fitness": 1.0,
+		"Mutations": 0.7,
+		"Variation": 0.8,
+		"Predators": 0.5,
+		"Survival": 0.9,
+		"Reproduction": 0.9,
+		"Genetic drift": 0.5,
+		"Bottleneck effect": 0.4,
+		"Founder effect": 0.4,
+		"Evolution": 0.9,
+		"Population size": 0.6
+	  }
+	},
+	{
+	  "name": "Mutations",
+	  "level": 2,
+	  "categories": {
+		"Mechanisms of Evolution": 0.9,
+		"Antibiotics and Resistance": 0.7,
+		"Fitness and Survival": 0.8,
+		"Variation and Traits": 1.0,
+		"Population Dynamics": 0.6
+	  },
+	  "relatedness": {
+		"Bacteria": 0.8,
+		"Antibiotic resistance": 0.7,
+		"Natural selection": 0.8,
+		"Alleles": 0.9,
+		"Fitness": 0.7,
+		"Mutations": 1.0,
+		"Variation": 0.9,
+		"Predators": 0.5,
+		"Survival": 0.7,
+		"Reproduction": 0.6,
+		"Genetic drift": 0.5,
+		"Bottleneck effect": 0.4,
+		"Founder effect": 0.4,
+		"Evolution": 0.8,
+		"Population size": 0.5
+	  }
+	},
+	{
+	  "name": "Variation",
+	  "level": 2,
+	  "categories": {
+		"Mechanisms of Evolution": 0.9,
+		"Antibiotics and Resistance": 0.5,
+		"Fitness and Survival": 0.8,
+		"Variation and Traits": 1.0,
+		"Population Dynamics": 0.7
+	  },
+	  "relatedness": {
+		"Bacteria": 0.8,
+		"Antibiotic resistance": 0.7,
+		"Natural selection": 0.9,
+		"Alleles": 0.8,
+		"Fitness": 0.8,
+		"Mutations": 0.9,
+		"Variation": 1.0,
+		"Predators": 0.6,
+		"Survival": 0.8,
+		"Reproduction": 0.7,
+		"Genetic drift": 0.6,
+		"Bottleneck effect": 0.5,
+		"Founder effect": 0.5,
+		"Evolution": 0.9,
+		"Population size": 0.6
+	  }
+	},
+	{
+	  "name": "Predators",
+	  "level": 3,
+	  "categories": {
+		"Mechanisms of Evolution": 0.6,
+		"Antibiotics and Resistance": 0.2,
+		"Fitness and Survival": 0.7,
+		"Variation and Traits": 0.8,
+		"Population Dynamics": 0.5
+	  },
+	  "relatedness": {
+		"Bacteria": 0.4,
+		"Antibiotic resistance": 0.3,
+		"Natural selection": 0.7,
+		"Alleles": 0.4,
+		"Fitness": 0.5,
+		"Mutations": 0.5,
+		"Variation": 0.6,
+		"Predators": 1.0,
+		"Survival": 0.8,
+		"Reproduction": 0.5,
+		"Genetic drift": 0.4,
+		"Bottleneck effect": 0.3,
+		"Founder effect": 0.3,
+		"Evolution": 0.6,
+		"Population size": 0.4
+	  }
+	},
+	{
+	  "name": "Survival",
+	  "level": 1,
+	  "categories": {
+		"Mechanisms of Evolution": 0.8,
+		"Antibiotics and Resistance": 0.6,
+		"Fitness and Survival": 1.0,
+		"Variation and Traits": 0.7,
+		"Population Dynamics": 0.7
+	  },
+	  "relatedness": {
+		"Bacteria": 0.6,
+		"Antibiotic resistance": 0.6,
+		"Natural selection": 0.8,
+		"Alleles": 0.6,
+		"Fitness": 0.9,
+		"Mutations": 0.7,
+		"Variation": 0.8,
+		"Predators": 0.8,
+		"Survival": 1.0,
+		"Reproduction": 0.9,
+		"Genetic drift": 0.5,
+		"Bottleneck effect": 0.4,
+		"Founder effect": 0.4,
+		"Evolution": 0.8,
+		"Population size": 0.6
+	  }
+	},
+	{
+	  "name": "Reproduction",
+	  "level": 2,
+	  "categories": {
+		"Mechanisms of Evolution": 0.7,
+		"Antibiotics and Resistance": 0.5,
+		"Fitness and Survival": 0.9,
+		"Variation and Traits": 0.7,
+		"Population Dynamics": 0.8
+	  },
+	  "relatedness": {
+		"Bacteria": 0.5,
+		"Antibiotic resistance": 0.5,
+		"Natural selection": 0.8,
+		"Alleles": 0.7,
+		"Fitness": 0.9,
+		"Mutations": 0.6,
+		"Variation": 0.7,
+		"Predators": 0.5,
+		"Survival": 0.9,
+		"Reproduction": 1.0,
+		"Genetic drift": 0.4,
+		"Bottleneck effect": 0.3,
+		"Founder effect": 0.3,
+		"Evolution": 0.8,
+		"Population size": 0.6
+	  }
+	},
+	{
+	  "name": "Genetic drift",
+	  "level": 1,
+	  "categories": {
+		"Mechanisms of Evolution": 1.0,
+		"Antibiotics and Resistance": 0.3,
+		"Fitness and Survival": 0.6,
+		"Variation and Traits": 0.7,
+		"Population Dynamics": 0.8
+	  },
+	  "relatedness": {
+		"Bacteria": 0.4,
+		"Antibiotic resistance": 0.3,
+		"Natural selection": 0.6,
+		"Alleles": 0.5,
+		"Fitness": 0.5,
+		"Mutations": 0.5,
+		"Variation": 0.6,
+		"Predators": 0.4,
+		"Survival": 0.5,
+		"Reproduction": 0.4,
+		"Genetic drift": 1.0,
+		"Bottleneck effect": 0.8,
+		"Founder effect": 0.8,
+		"Evolution": 0.7,
+		"Population size": 0.7
+	  }
+	},
+	{
+	  "name": "Bottleneck effect",
+	  "level": 2,
+	  "categories": {
+		"Mechanisms of Evolution": 0.9,
+		"Antibiotics and Resistance": 0.2,
+		"Fitness and Survival": 0.5,
+		"Variation and Traits": 0.6,
+		"Population Dynamics": 0.8
+	  },
+	  "relatedness": {
+		"Bacteria": 0.3,
+		"Antibiotic resistance": 0.2,
+		"Natural selection": 0.5,
+		"Alleles": 0.4,
+		"Fitness": 0.4,
+		"Mutations": 0.4,
+		"Variation": 0.5,
+		"Predators": 0.3,
+		"Survival": 0.4,
+		"Reproduction": 0.3,
+		"Genetic drift": 0.8,
+		"Bottleneck effect": 1.0,
+		"Founder effect": 0.7,
+		"Evolution": 0.6,
+		"Population size": 0.8
+	  }
+	},
+	{
+	  "name": "Founder effect",
+	  "level": 2,
+	  "categories": {
+		"Mechanisms of Evolution": 0.9,
+		"Antibiotics and Resistance": 0.2,
+		"Fitness and Survival": 0.5,
+		"Variation and Traits": 0.6,
+		"Population Dynamics": 0.8
+	  },
+	  "relatedness": {
+		"Bacteria": 0.3,
+		"Antibiotic resistance": 0.2,
+		"Natural selection": 0.5,
+		"Alleles": 0.4,
+		"Fitness": 0.4,
+		"Mutations": 0.4,
+		"Variation": 0.5,
+		"Predators": 0.3,
+		"Survival": 0.4,
+		"Reproduction": 0.3,
+		"Genetic drift": 0.8,
+		"Bottleneck effect": 0.7,
+		"Founder effect": 1.0,
+		"Evolution": 0.6,
+		"Population size": 0.8
+	  }
+	},
+	{
+	  "name": "Evolution",
+	  "level": 1,
+	  "categories": {
+		"Mechanisms of Evolution": 1.0,
+		"Antibiotics and Resistance": 0.5,
+		"Fitness and Survival": 0.8,
+		"Variation and Traits": 0.9,
+		"Population Dynamics": 0.8
+	  },
+	  "relatedness": {
+		"Bacteria": 0.7,
+		"Antibiotic resistance": 0.7,
+		"Natural selection": 1.0,
+		"Alleles": 0.8,
+		"Fitness": 0.9,
+		"Mutations": 0.8,
+		"Variation": 0.9,
+		"Predators": 0.6,
+		"Survival": 0.8,
+		"Reproduction": 0.8,
+		"Genetic drift": 0.7,
+		"Bottleneck effect": 0.6,
+		"Founder effect": 0.6,
+		"Evolution": 1.0,
+		"Population size": 0.7
+	  }
+	},
+	{
+	  "name": "Population size",
+	  "level": 2,
+	  "categories": {
+		"Mechanisms of Evolution": 0.7,
+		"Antibiotics and Resistance": 0.3,
+		"Fitness and Survival": 0.6,
+		"Variation and Traits": 0.7,
+		"Population Dynamics": 1.0
+	  },
+	  "relatedness": {
+		"Bacteria": 0.5,
+		"Antibiotic resistance": 0.4,
+		"Natural selection": 0.7,
+		"Alleles": 0.5,
+		"Fitness": 0.6,
+		"Mutations": 0.5,
+		"Variation": 0.6,
+		"Predators": 0.4,
+		"Survival": 0.6,
+		"Reproduction": 0.6,
+		"Genetic drift": 0.7,
+		"Bottleneck effect": 0.8,
+		"Founder effect": 0.8,
+		"Evolution": 0.7,
+		"Population size": 1.0
+	  }
+	}
   ]
 }
