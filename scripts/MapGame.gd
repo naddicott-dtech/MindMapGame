@@ -2,7 +2,7 @@ extends Node2D
 # the path to the JSON file
 #var json_path = "res://data/NeuronsData.json"
 @onready var move_tool_button = $UI/CenterContainer/VBoxContainer/HBoxContainer/MoveToolButton
-var json_path = "res://data/PopulationGenetics.json"
+var json_path = "res://data/BrainRegions2025.json"
 var term_scene_path = "res://scenes/Term.tscn"
 var connector_line_scene_path = "res://scenes/ConnectorLine.tscn"
 enum Tools {MOVE, CONNECT, DISCONNECT}

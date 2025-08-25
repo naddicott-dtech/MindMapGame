@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://c3vs6pjkpv125"]
 
-[ext_resource type="Script" path="res://scripts/Term.gd" id="1_epxdy"]
-[ext_resource type="Script" path="res://scripts/MyRichTextLabel.gd" id="2_6y6fy"]
+[ext_resource type="Script" uid="uid://cw7rjv0rbq2g8" path="res://scripts/Term.gd" id="1_epxdy"]
+[ext_resource type="Script" uid="uid://bmsuhj33ystmx" path="res://scripts/MyRichTextLabel.gd" id="2_6y6fy"]
 
 [node name="Term" type="Node2D"]
 script = ExtResource("1_epxdy")
