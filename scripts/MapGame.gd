@@ -186,6 +186,12 @@ func _input(event):
 					start_connector_line(clicked_term)
 				else: #second click, finish line
 					finish_conector_line(clicked_term)
+			else: # clicked, but not on a term - cancel the connection
+				if first_clicked_term and line_in_progress:
+					first_clicked_term.remove_child(line_in_progress)
+					line_in_progress.queue_free()
+					line_in_progress = null
+					first_clicked_term = null
 		else: #input was not a mouse button
 			#handle movement mid-line creation
 			if first_clicked_term and line_in_progress:
